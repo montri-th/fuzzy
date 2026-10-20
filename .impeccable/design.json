@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T17:59:12.194793+00:00",
+  "title": "Design System: CityMETER Search Lab",
+  "extensions": {
+    "colorMeta": {
+      "interaction-accent-dark": {
+        "role": "primary",
+        "displayName": "Interaction accent — dark",
+        "canonical": "#68C4E2"
+      },
+      "interaction-accent-light": {
+        "role": "primary",
+        "displayName": "Interaction accent — light",
+        "canonical": "#176B82"
+      },
+      "surface-canvas-dark": {
+        "role": "neutral",
+        "displayName": "Canvas — dark",
+        "canonical": "#11191D"
+      },
+      "surface-canvas-light": {
+        "role": "neutral",
+        "displayName": "Canvas — light",
+        "canonical": "#F6F7F3"
+      },
+      "surface-blue-tint-dark": {
+        "role": "neutral",
+        "displayName": "Selection tint — dark",
+        "canonical": "#18333E"
+      },
+      "surface-blue-tint-light": {
+        "role": "neutral",
+        "displayName": "Selection tint — light",
+        "canonical": "#E2E9ED"
+      }
+    },
+    "typographyMeta": {
+      "workspace-heading": {
+        "displayName": "Workspace heading",
+        "purpose": "Compact title in the map/search workspace."
+      },
+      "review-heading": {
+        "displayName": "Review heading",
+        "purpose": "Implementation-review title; 28px at the narrow breakpoint."
+      },
+      "result-name": {
+        "displayName": "Canonical result name",
+        "purpose": "Source name kept beside administrative context."
+      }
+    },
+    "breakpoints": [
+      {
+        "name": "workspace-narrow-max",
+        "value": "749px"
+      },
+      {
+        "name": "admin-single-column-max",
+        "value": "900px"
+      },
+      {
+        "name": "workspace-two-column-max",
+        "value": "1199px"
+      },
+      {
+        "name": "workspace-wide-min",
+        "value": "1600px"
+      }
+    ],
+    "themeBinding": {
+      "default": "dark",
+      "publicModes": [
+        "dark",
+        "light",
+        "auto"
+      ],
+      "adminModes": [
+        "dark"
+      ],
+      "source": "site/assets/lds/build-kit/lds-0.9.7-ext.css",
+      "previewBinding": "Existing semantic CSS aliases, with exact dark fallback values. No new ramps generated."
+    },
+    "provenance": {
+      "designSystem": "LDS 0.9.7",
+      "releaseRef": "v0.9.7-owner.1",
+      "colorSetId": "color-srgb-10",
+      "documentId": "lds-0.9.7-landometer-standalone-r1",
+      "standaloneSha256": "d3085cbc0a50195f1cbf0c77b1d77c0d19b84364daf2948eb367348d65432d96",
+      "releaseManifestSha256": "0a936393fc1ab05f8b32110397546b2a87cc26e46f2661a712bdd2debaa58516",
+      "sources": [
+        "site/styles.css",
+        "site/admin.css",
+        "site/assets/lds/machine/color-srgb-10.production.css",
+        "site/assets/lds/build-kit/lds-0.9.7-ext.css",
+        "site/assets/lds/build-kit/fonts.css",
+        "site/table-scroll.js"
+      ]
+    },
+    "coverage": {
+      "mode": "incumbent implementation scan",
+      "newDirectionChosen": false,
+      "newBrowserTestRun": false,
+      "fullDesignSystemCertification": false,
+      "hostedReadinessVerified": false,
+      "existingLdsAssetsHashChecked": 28,
+      "packageChecksPassed": 9768,
+      "packageChecksTotal": 9768,
+      "signatureStatus": "unsigned-owner-approved",
+      "omitted": "No synthesized tonal ramps, shadow tokens, motion tokens, eyebrow pattern or nested-card recipe.",
+      "shippedManifestAssets": 28,
+      "shippedManifestMismatches": 0
+    }
+  },
+  "components": [
+    {
+      "name": "Default action",
+      "kind": "button",
+      "refersTo": "button-default",
+      "description": "Quiet action used by search operations and administration.",
+      "html": "<button class=\"ds-button\">โหลดข้อมูล</button>",
+      "css": ".ds-button{font-family:\"Bai Jamjuree\",sans-serif;font-size:15px;line-height:1.6;min-height:44px;padding:8px 16px;border:1px solid var(--border-default,#46524F);border-radius:999px;background:var(--surface-card,#20292D);color:var(--text-primary,#F1F4EF);font-weight:600;cursor:pointer}.ds-button:hover{background:var(--surface-soft,#2B3534)}.ds-button:focus-visible{outline:2px solid var(--interaction-focus-ring,#68C4E2);outline-offset:4px;}.ds-button:disabled{color:var(--text-disabled,#71817D);cursor:wait}"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Transparent secondary action used for feedback and continuation.",
+      "html": "<button class=\"ds-secondary\">ดูผลเพิ่ม</button>",
+      "css": ".ds-secondary{font-family:\"Bai Jamjuree\",sans-serif;font-size:15px;line-height:1.6;min-height:44px;padding:8px 16px;border:1px solid var(--border-default,#46524F);border-radius:999px;background:transparent;color:var(--text-primary,#F1F4EF);font-weight:600;cursor:pointer}.ds-secondary:hover{background:var(--surface-soft,#2B3534)}.ds-secondary:focus-visible{outline:2px solid var(--interaction-focus-ring,#68C4E2);outline-offset:4px;}.ds-secondary:disabled{color:var(--text-disabled,#71817D);cursor:wait}"
+    },
+    {
+      "name": "Search field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Labelled main search field with enclosing focus treatment; preview does not submit a query.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-query\">ชื่อพื้นที่ วัด มัสยิด หรือโบสถ์</label><div class=\"ds-field\"><input id=\"ds-query\" class=\"ds-query\" placeholder=\"ลอง “เชียงหใม่” หรือชื่อศาสนสถาน\" maxlength=\"160\"></div><p class=\"ds-hint\">ค้นจากชื่อในข้อมูลจริง · ผลเดาไม่เลือกให้อัตโนมัติ</p>",
+      "css": ".ds-field-label{font-family:\"Bai Jamjuree\",sans-serif;font-size:15px;line-height:1.6;display:block;font-size:14px;font-weight:600;margin-bottom:8px;color:var(--text-primary,#F1F4EF)}.ds-field{display:flex;align-items:center;min-height:56px;padding-left:16px;border:1px solid var(--border-emphasis,#7C8A84);border-radius:16px;background:var(--surface-raised,#293337)}.ds-field:focus-within{outline:2px solid var(--interaction-focus-ring,#68C4E2);outline-offset:3px}.ds-query{font-family:\"Bai Jamjuree\",sans-serif;font-size:15px;line-height:1.6;width:100%;min-width:0;padding:14px 12px 14px 0;border:0;outline:none;background:transparent;color:var(--text-primary,#F1F4EF);font-size:16px;caret-color:var(--interaction-accent,#68C4E2)}.ds-query::placeholder{color:var(--text-metadata,#A6B5B1)}.ds-hint{font-family:\"Bai Jamjuree\",sans-serif;font-size:15px;line-height:1.6;margin:8px 0 0;color:var(--text-metadata,#A6B5B1);font-size:12px;line-height:1.65}"
+    },
+    {
+      "name": "Scope control",
+      "kind": "custom",
+      "refersTo": "scope-control",
+      "description": "Three explicit search scopes; this preview shows the all-scope selected state.",
+      "html": "<div class=\"ds-scope\" role=\"group\" aria-label=\"ขอบเขตการค้นหา\"><button aria-pressed=\"true\">ทั้งหมด</button><button aria-pressed=\"false\">พื้นที่</button><button aria-pressed=\"false\">ศาสนสถาน</button></div>",
+      "css": ".ds-scope{display:flex;gap:4px;padding:4px;border-radius:999px;background:var(--surface-alt,#172126)}.ds-scope button{font-family:\"Bai Jamjuree\",sans-serif;font-size:15px;line-height:1.6;flex:1;min-width:0;min-height:44px;padding:8px;border:0;border-radius:999px;background:transparent;color:var(--text-primary,#F1F4EF);font-size:14px;font-weight:600;cursor:pointer}.ds-scope button[aria-pressed=\"true\"]{background:var(--surface-raised,#293337)}.ds-scope button:hover{background:var(--surface-soft,#2B3534)}.ds-scope button:focus-visible{outline:2px solid var(--interaction-focus-ring,#68C4E2);outline-offset:4px;}@media(forced-colors:active){.ds-scope button[aria-pressed=\"true\"]{outline:2px solid Highlight}}"
+    },
+    {
+      "name": "Match reason",
+      "kind": "chip",
+      "refersTo": "match-reason",
+      "description": "An explanatory reason label, without a probability or automatic-selection claim.",
+      "html": "<span class=\"ds-reason\">ต้นคำสะกดคล้ายตามคู่เสียงที่กำหนด</span>",
+      "css": ".ds-reason{font-family:\"Bai Jamjuree\",sans-serif;font-size:15px;line-height:1.6;display:inline-block;padding:1px 6px;border-radius:4px;background:var(--surface-alt,#172126);color:var(--text-secondary,#C4CECA);font-size:12px}"
+    },
+    {
+      "name": "Selected result",
+      "kind": "custom",
+      "refersTo": "result-selected",
+      "description": "A canonical source name stays beside its parent context and a labelled match reason.",
+      "html": "<button class=\"ds-result\" aria-pressed=\"true\"><span class=\"ds-kind\">สถานที่</span><span class=\"ds-result-content\"><strong>วัดอรุณราชวราราม</strong><span class=\"ds-parent\">พุทธ · วัดอรุณ · บางกอกใหญ่ · กรุงเทพมหานคร</span><span class=\"ds-result-reason\">ต้นคำสะกดคล้ายตามคู่เสียงที่กำหนด</span></span></button>",
+      "css": ".ds-result{font-family:\"Bai Jamjuree\",sans-serif;font-size:15px;line-height:1.6;display:flex;align-items:flex-start;gap:12px;width:100%;min-height:82px;padding:14px 12px;border:0;border-bottom:1px solid var(--border-hairline,#33403D);border-radius:10px;background:var(--surface-blue-tint,#18333E);color:var(--text-primary,#F1F4EF);text-align:left;cursor:pointer}.ds-result:hover{background:var(--surface-soft,#2B3534)}.ds-result:focus-visible{outline:2px solid var(--interaction-focus-ring,#68C4E2);outline-offset:4px;}.ds-kind{font-size:12px;color:var(--text-metadata,#A6B5B1);min-width:44px;margin-top:7px}.ds-result-content{min-width:0;flex:1}.ds-result-content strong{display:block;font-size:16px;font-weight:600;line-height:1.65;overflow-wrap:anywhere}.ds-parent{display:block;margin-top:2px;color:var(--text-metadata,#A6B5B1);font-size:12px;overflow-wrap:anywhere}.ds-result-reason{display:inline-block;margin-top:6px;padding:1px 6px;border-radius:4px;background:var(--surface-canvas,#11191D);color:var(--text-secondary,#C4CECA);font-size:12px}"
+    },
+    {
+      "name": "Demo navigation",
+      "kind": "nav",
+      "refersTo": "demo-navigation",
+      "description": "Ordinary review/source navigation with meaningful target size and visible focus.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"เมนูเดโม\"><a href=\"review.html\">อ่านผล review</a><a href=\"https://github.com/montri-th/fuzzy\" target=\"_blank\" rel=\"noopener\">ดูโค้ด</a></nav>",
+      "css": ".ds-nav{display:flex;gap:24px}.ds-nav a{font-family:\"Bai Jamjuree\",sans-serif;font-size:15px;line-height:1.6;display:flex;align-items:center;min-height:44px;color:var(--text-secondary,#C4CECA);text-decoration:none;text-underline-offset:4px}.ds-nav a:hover{color:var(--interaction-accent,#68C4E2);text-decoration:underline}.ds-nav a:focus-visible{outline:2px solid var(--interaction-focus-ring,#68C4E2);outline-offset:4px;}"
+    },
+    {
+      "name": "Investigation container",
+      "kind": "card",
+      "refersTo": "triage-container",
+      "description": "A bounded investigation surface, with interface copy and no complaint data.",
+      "html": "<article class=\"ds-triage\"><h3>เลือกคำร้องเพื่อสืบหาสาเหตุ</h3><p>แยกปัญหาสะกด ชื่อเรียกอื่น ลำดับผล และข้อมูลที่ยังไม่มี เพื่อแก้ให้ตรงจุด</p></article>",
+      "css": ".ds-triage{font-family:\"Bai Jamjuree\",sans-serif;font-size:15px;line-height:1.6;padding:24px;border:1px solid var(--border-default,#46524F);border-radius:16px;background:var(--surface-card,#20292D);color:var(--text-primary,#F1F4EF);overflow-wrap:anywhere}.ds-triage h3{margin:0;font-family:\"IBM Plex Sans Thai Looped\",\"Bai Jamjuree\",sans-serif;font-size:23px;line-height:1.45}.ds-triage p{margin:12px 0 0;color:var(--text-secondary,#C4CECA);font-size:14px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "CityMETER map workspace",
+    "overview": "This name records the incumbent interface the scoped task preserves; it is not a newly proposed brand metaphor. The search panel, map and contextual explanation form a practical geographic workspace. The extension adds understandable match reasons, comparison limits, explicit problem reporting and an investigation surface while keeping that workspace recognizable.\n\nDark is the implemented default. Search and review also offer light and system-following themes; administration currently uses dark. The interface uses restrained tonal surfaces, readable Thai names and ordinary controls. Selected rows gain a quiet background; borders separate useful content. No new visual direction, comp, brand slogan or system-wide prohibition is created by this record.",
+    "keyCharacteristics": [
+      "A persistent map workspace with source context beside search results.",
+      "Canonical names, administrative parents and match reasons remain legible together.",
+      "Flat tonal layers, hairline separators and visible keyboard outlines.",
+      "Thai-led content with source English names and explicit evidence limits."
+    ],
+    "rules": [
+      {
+        "name": "The Source Color Rule",
+        "body": "Use the supplied semantic aliases and exact LDS values. Do not synthesize tonal ramps or transform analytical colors to suit a theme. No quantitative scale is newly introduced by this search extension.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "**Do** preserve the incumbent map workspace while extending the requested search and investigation behavior.",
+      "**Do** bind controls and text to the supplied semantic aliases and preserve exact theme pairs.",
+      "**Do** keep canonical names, administrative context and match reasons visible together.",
+      "**Do** retain visible keyboard focus, explicit selection, wrapping and meaningful table/list boundaries.",
+      "**Do** inspect real Thai and English content at narrow and desktop widths, including new operational states.",
+      "**Do** separate package checks, static checks, inspected captures, live interaction tests and hosted readiness in every handoff."
+    ],
+    "donts": [
+      "**Don't** add decorative brackets or colored left/right rails to navigation, tabs, cards or callouts.",
+      "**Don't** promote incidental eyebrow labels, nested card enclosures or count displays into default page scaffolds.",
+      "**Don't** invent gradients, derived tonal ramps, confidence probabilities or color-coded business/risk claims.",
+      "**Don't** change canonical source names, remove comparison/sample limitations or show local downloads as sent reports.",
+      "**Don't** treat this scoped record as a full LDS certificate, a logo-artwork approval, team activation or a deployment-completion receipt."
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-20T18:00:22.634946+00:00",
+  "environment": "local-only PGlite and static app; no hosted persistence claim",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 960
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "observed": [
+    "Thai and English queries render readable source names, parents and match reasons",
+    "Selected keyboard result uses current source identity",
+    "Enter keeps visible list announced expanded",
+    "Escape hides results, clears active descendant and keyboard styling",
+    "Arrow key reopens results",
+    "Named focusable comparison and stats table regions move scrollLeft to 120 using ArrowRight",
+    "Local admin reads persisted anonymous query episode, complaint, confirmation and audit",
+    "Confirmed-case export UI reports complete download of one local QA case"
+  ],
+  "freshReview": {
+    "disposition": "ship",
+    "scope": "four identified fixes scored resolved; no whole-surface certification"
+  },
+  "notVerified": [
+    "hosted provisioning and migrations",
+    "hosted write/read and persistence after redeploy",
+    "provider rate-limit postprocessing",
+    "native-device behavior",
+    "browser zoom and exhaustive assistive-technology matrix"
+  ],
+  "publishedTarget": "https://landometer-fuzzy.netlify.app",
+  "deploymentStatus": "pending repository connection"
+}

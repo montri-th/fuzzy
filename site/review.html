@@ -14,13 +14,13 @@
 <header class="app-header">
   <a class="brand" href="https://landometer.com/" aria-label="Landometer">Landometer</a>
   <div class="product-name">CityMETER <span>/ Search Lab</span></div>
-  <nav class="desktop-nav" aria-label="เมนูเดโม"><a href="index.html">ทดลองค้นหา</a><a href="admin.html">ดูแลผลค้นหา</a><a href="https://github.com/montri-th/fuzzy" target="_blank" rel="noopener">ดูโค้ด</a></nav>
+  <nav class="desktop-nav" aria-label="เมนูเดโม"><a href="index.html">ทดลองค้นหา</a><a href="admin.html">ดูแลผลค้นหา</a></nav>
   <details class="menu"><summary aria-label="ตั้งค่าและเมนู"><span class="icon" aria-hidden="true">menu</span></summary><div class="menu-content"><a href="index.html">ทดลองค้นหา</a><a href="admin.html">ดูแลผลค้นหา</a><a href="https://github.com/montri-th/fuzzy" target="_blank" rel="noopener">ดูโค้ดบน GitHub</a><label for="theme">ธีม</label><select id="theme"><option value="dark">มืด</option><option value="light">สว่าง</option><option value="auto">ตามเครื่อง</option></select></div></details>
 </header>
 <main class="review-page">
   <a class="back-link" href="index.html">กลับไปทดลองค้นหา</a>
-  <p class="review-badge">ทบทวน 21 ตุลาคม 2026 · LDS 0.9.7 · เดโมแยกจาก CityMETER ปัจจุบัน</p>
   <h1 id="review-title">ฐานของ Claude ใช้ต่อได้<br>เติมความเข้าใจข้อมูลที่กำลังเปิด</h1>
+  <p class="review-meta">ทบทวน 21 ตุลาคม 2026 · เดโมแยกจาก CityMETER ปัจจุบัน</p>
   <p>แนวทางเดิมแก้ปัญหาการค้นชื่อพื้นที่ได้ตรงจุด: ชื่อตรงมาก่อน ใช้ชื่อเรียกอื่นที่ตรวจแล้ว แสดงชื่อใกล้เคียงให้เลือก และรักษาอำเภอ–จังหวัดของผลค้นหา เดโมนี้นำหลักนั้นมาทดลอง พร้อมเพิ่มการค้นชื่อศาสนสถานและประเภทข้อมูลในชุด Place of Worship</p>
   <div class="review-note"><strong>สิ่งที่ทดลองได้ตอนนี้</strong><p>พิมพ์ “เชียงหใม่”, “จ.เชียงใหม่”, “๑๐”, “วัดอรุน” หรือ “มัสยิด เชียงใหม่” แล้วดูเหตุผลที่จับคู่และบริบทของแต่ละผล ชื่อซ้ำหรือชื่อที่เดาไม่ถูกเลือกให้อัตโนมัติ</p></div>
 
@@ -35,7 +35,8 @@
   </ul>
 
   <h2 id="data">ข้อมูลที่ค้นได้ในเดโม</h2>
-  <div class="table-scroll"><table><caption>Snapshot จาก public API วันที่ 21 ต.ค. 2026</caption><thead><tr><th scope="col">ชุดข้อมูล</th><th scope="col">จำนวน</th><th scope="col">ขอบเขต</th></tr></thead><tbody>
+  <p class="hint scroll-hint">เลื่อนตารางแนวนอนเพื่อดูทุกคอลัมน์ · ใช้ปุ่มลูกศรได้เมื่อเลือกกรอบตาราง</p>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="ตารางขอบเขตข้อมูล เลื่อนแนวนอนได้"><table><caption>Snapshot จาก public API วันที่ 21 ต.ค. 2026</caption><thead><tr><th scope="col">ชุดข้อมูล</th><th scope="col">จำนวน</th><th scope="col">ขอบเขต</th></tr></thead><tbody>
     <tr><th scope="row">พื้นที่</th><td>17,062 รายการ</td><td>จังหวัด อำเภอ/เขต ตำบล/แขวง อปท. และย่าน จาก corpus ของ CityMETER</td></tr>
     <tr><th scope="row">ศาสนสถานที่ค้นชื่อได้</th><td>1,491 รายการ</td><td>126 ตำบลที่เลือกจาก 77 จังหวัด เป็นตัวอย่างแบบเจาะจง ไม่ใช่ตัวอย่างแทนประเทศ</td></tr>
     <tr><th scope="row">ยอดใน source ระดับประเทศ</th><td>51,901 รายการ</td><td>มีพิกัด 38,842 และระบุได้เพียงพื้นที่ 13,059 รายการ เดโมไม่ได้โหลดชื่อครบจำนวนนี้</td></tr>
@@ -46,7 +47,8 @@
   <h2 id="comparison">เปรียบเทียบกับของเดิมอย่างไร</h2>
   <p>มีผลตอบจริงจาก API ค้นพื้นที่เดิมเก็บไว้ <strong>15 คำตัวอย่าง</strong> คำอื่นแสดงการจำลองวิธีเดิมบน snapshot และติดป้ายว่าเป็นการจำลองเสมอ การเพิ่มชื่อศาสนสถานเป็น scope ใหม่ จึงแยกจากการปรับความทนต่อคำผิดของช่องพื้นที่เดิม</p>
   <p>ใน 9 คำที่เลือกไว้และมี ID พื้นที่เป้าหมาย API เดิมเข้าถึง ID ตาม cutoff ของ case ได้ 2/9 ส่วนเดโมได้ 9/9 เป็นผลเฉพาะตัวอย่างเหล่านี้ ซึ่งเปิดให้ผู้พัฒนาเห็นระหว่างแก้ไขแล้ว ไม่ใช่อัตราความสำเร็จของผู้ใช้ทั้งหมด</p>
-  <div class="table-scroll"><table class="score-table"><caption>มี ID เป้าหมายใน top-k ที่กำหนดไว้ล่วงหน้า</caption><thead><tr><th scope="col">คำค้น</th><th scope="col">API เดิมที่เก็บไว้</th><th scope="col">เดโมใหม่</th></tr></thead><tbody>
+  <p class="hint scroll-hint">เลื่อนตารางแนวนอนเพื่อเทียบผลเดิมและผลใหม่ · ใช้ปุ่มลูกศรได้เมื่อเลือกกรอบตาราง</p>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="ตารางเปรียบเทียบผลเดิมและใหม่ เลื่อนแนวนอนได้"><table class="score-table"><caption>มี ID เป้าหมายใน top-k ที่กำหนดไว้ล่วงหน้า</caption><thead><tr><th scope="col">คำค้น</th><th scope="col">API เดิมที่เก็บไว้</th><th scope="col">เดโมใหม่</th></tr></thead><tbody>
     <tr><th scope="row">เชียงใหม่</th><td>พบ อันดับ 1</td><td>พบ อันดับ 1</td></tr>
     <tr><th scope="row">เชียงหใม่</th><td>ไม่พบ</td><td>พบ อันดับ 1</td></tr>
     <tr><th scope="row">เชียงใหม</th><td>พบ อันดับ 1</td><td>พบ อันดับ 1</td></tr>
@@ -87,8 +89,9 @@
     <li><a href="https://unicode.org/reports/tr15/">Unicode normalization</a> — แยก canonical normalization จากการผ่อนคลายการสะกด; ห้ามเขียนทับชื่อจริง</li>
     <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/">WAI-ARIA combobox</a> — รูปแบบ keyboard, focus และการยืนยันผลที่ผู้ใช้เลือก</li>
   </ul>
-  <p class="review-badge">เอกสารแนบของ Claude เป็น input สำหรับทบทวน ไม่ใช่คำสั่งให้ deploy หรือเปิดระบบเก็บข้อมูลโดยอัตโนมัติ · รายงานสาธารณะนี้ไม่มีข้อมูลคำบ่นของผู้ใช้</p>
+  <p class="review-meta">เอกสารแนบของ Claude เป็น input สำหรับทบทวน ไม่ใช่คำสั่งให้ deploy หรือเปิดระบบเก็บข้อมูลโดยอัตโนมัติ · รายงานสาธารณะนี้ไม่มีข้อมูลคำบ่นของผู้ใช้</p>
 </main>
 <script>const select=document.querySelector('#theme');try{select.value=localStorage.getItem('fuzzy-theme')||'dark'}catch{}select.addEventListener('change',()=>{const t=select.value;try{localStorage.setItem('fuzzy-theme',t)}catch{}document.documentElement.dataset.theme=t==='auto'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t});</script>
+<script src="table-scroll.js" defer></script>
 </body>
 </html>
