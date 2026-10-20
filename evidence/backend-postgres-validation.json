@@ -1,0 +1,34 @@
+{
+  "node": "v24.21.0",
+  "pglite": "0.2.17",
+  "postgres": "PostgreSQL 16.4 on x86_64-pc-linux-gnu, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
+  "migrationSha256": "671ccb2d484a1b36b45d317ae4d5e31cf0b2d1ccc02c39119b75ef35c738e601",
+  "repositorySha256": "225dbe5906bc6514f9c7b921554b34e77ec35bc4710076f7d732a4701dd9944c",
+  "passed": [
+    "full unmodified migration creates tables, indexes and foreign key",
+    "anonymous event inserts round-trip and UUID duplicate is idempotent",
+    "Bangkok day boundaries, grouped outcome counts and numeric percentiles",
+    "feedback stores JSON namespace IDs, apostrophes and religion intact",
+    "feedback listing uses inclusive start, exclusive end and stable pagination",
+    "confirmed triage executes row-lock transaction and writes audit version",
+    "stale triage version rolls back without another audit row",
+    "actual audit uniqueness SQL failure rolls back feedback update atomically",
+    "confirmed-case export retains religion, namespace IDs and human review",
+    "abstain resolved case exports with no IDs and pagination works",
+    "stale deletion version preserves feedback and audit",
+    "actual foreign-key failure rolls back preceding audit deletion",
+    "deletion locks row, removes audit+feedback and leaves unrelated data",
+    "missing-row triage and deletion return 404 and release transaction client",
+    "schema rejects invalid JSON shapes, religion and non-approved confirmed row",
+    "schema rejects confirmed status with NULL expected outcome"
+  ],
+  "failed": [],
+  "limitations": [
+    "In-memory PostgreSQL 16.4, not a provisioned Netlify database.",
+    "PGlite has one connection: SELECT FOR UPDATE syntax and transaction behavior execute, but competing-session blocking/deadlock behavior is not validated.",
+    "Netlify database driver is adapted to PGlite: tagged-template interpolation -> positional parameters; pool query affectedRows -> pg rowCount. No inherited environment DB URL or credentials are read."
+  ],
+  "queryCount": 75,
+  "releaseCount": 9,
+  "finishedAt": "2026-10-20T17:37:37.377Z"
+}

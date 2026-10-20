@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "dataset": "CityMETER Place of Worship — bounded fuzzy-search demo",
+  "retrievedAt": "2026-10-20T17:15:14.757001+00:00",
+  "retrievedDateBangkok": "2026-10-21",
+  "publicPage": "https://landometer.com/v3/citymeter?d=placeOfWorship",
+  "apiBase": "https://landometer.com/api/v2/citymeter-v3/",
+  "authenticated": false,
+  "productionModified": false,
+  "counts": {
+    "areas": 17062,
+    "areaTypes": {
+      "PROVINCE": 77,
+      "DISTRICT": 928,
+      "SUBDISTRICT": 7436,
+      "LOCALE": 847,
+      "MUNICIPALITY": 7774
+    },
+    "places": 1491,
+    "sampleSubdistricts": 126,
+    "sampleProvinces": 77,
+    "sampleReligion": {
+      "buddhist": 1304,
+      "islam": 122,
+      "christian": 64,
+      "sikh": 1
+    },
+    "sampleStatus": {
+      "abandoned": 132,
+      "active": 1359
+    },
+    "sampleScopedTotalCount": 1825,
+    "sampleScopedPointCount": 1491,
+    "sampleScopedAdminOnlyCount": 334,
+    "nationalTotalCount": 51901,
+    "nationalPointCount": 38842,
+    "nationalAdminOnlyCount": 13059,
+    "nationalReligions": {
+      "buddhist": 44212,
+      "islam": 3842,
+      "christian": 3835,
+      "sikh": 12
+    }
+  },
+  "coverage": {
+    "areas": "All area names returned by current public base/info/lv0 plus77 province base/info/lv1 endpoints; a CityMETER corpus snapshot, not a statutory boundary authority.",
+    "places": "1,491 mapped public places in126 selected subdistricts across77 provinces;3.84% of national mapped records. These are illustrative coverage, not statistically representative.",
+    "sampleMethod": [
+      "Highest public pointCount subdistrict in each of77 provinces.",
+      "Every subdistrict with positive Sikh count in the refreshed province summaries.",
+      "Selected metropolitan subdistricts: Bangkok Phra Nakhon,Bang Rak,Samphanthawong,Thon Buri,Bangkok Yai districts;Mueang Chiang Mai district;Hat Yai,Koh Hong,andBo Yang subdistricts inSongkhla."
+    ],
+    "samplingBias": "Purposive/high-count and metropolitan selection; sample religion proportions and results must not be presented as national distribution.",
+    "excluded": "No point names or invented coordinates for13,059 nationwide admin-only records; no private contacts, officials, clergy, land records, congregation counts, or personal information retained.",
+    "negativeResultMeaning": "Not found means absent from this indexed snapshot or below matching threshold; it does not mean the worship place does not exist."
+  },
+  "coordinates": {
+    "places": "Exact source lat/lon properties returned in public MVT; tile geometry was not used for the demo coordinates.",
+    "areas": "Center of source EPSG:3857 extent converted toWGS84 for map display; not an entrance, address, centroid of polygon, or containment evidence.",
+    "mvtZoom": 0,
+    "reason": "One world tile for each explicit subdistrict scope; avoids sweeping tiles.",
+    "geometryCaveat": "MVT geometry atzoom0 is coarsely quantized and intentionally ignored in favor of source lat/lon properties."
+  },
+  "identity": {
+    "placeId": "Source public place id preserved as placeId; demo id is poi:<sourcePlaceId>.",
+    "placeParents": "SUBDISTRICT membership proven by selected public overlay query;DISTRICT via exact four-digit subdistrict code prefix matching a current district record;PROVINCE from the containing current province response.",
+    "areaParents": "Province from containing public response;SUBDISTRICT->DISTRICT by exact current code prefix. Municipality andLocale do not receive invented district/subdistrict parents.",
+    "canonicalNames": "Original source Thai andEnglish strings are preserved. MissingEnglish names stay null.",
+    "aliases": "Only source province abbrEn values included initially; no generated transliterations or unverified place aliases."
+  },
+  "validation": {
+    "tileRequests": 126,
+    "successfulTiles": 126,
+    "decodedPoints": 1491,
+    "distinctPlaceIds": 1491,
+    "samplePointCountsReconciled": true,
+    "finiteSourceCoordinates": true,
+    "areaIdsUnique": true
+  },
+  "endpoints": {
+    "areaNames": [
+      "base/info/lv0",
+      "base/info/lv1/{provinceUuid}"
+    ],
+    "oldSearch": "base/search?term={encodedQuery}",
+    "worshipSummaries": [
+      "place-of-worship/info/lv0",
+      "place-of-worship/info/lv1/{provinceUuid}?currentDetailType=S"
+    ],
+    "worshipPoints": "place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId={sourceSubdistrictUuid}",
+    "worshipDetailObservedButNotBulkFetched": "place-of-worship/place?placeId={sourcePlaceId}"
+  },
+  "baseline": {
+    "file": "legacy-samples.json",
+    "queries": 15,
+    "kind": "Actual public existing-search responses, not a reimplementation of its backend.",
+    "scope": "Existing global area search; observed client has no dataset-aware worship name search. Old area search and new combined search have different retrieval scope; evaluation must report this separately from typo correction.",
+    "latencyCaveat": "Captured search response content is static for this demo; do not compare local runtime timing to production network latency."
+  },
+  "limits": [
+    "PublicAPI does not expose a name bulk list for national admin-only records through the observed client contract.",
+    "Source current version and operational status were not independently verified against upstream registries.",
+    "Source religion/status fields describe dataset records; they do not establish actual personal belief, citizen behavior, eligibility, risk, or live opening hours.",
+    "NoLocale Insight used to infer population, demand, religion, risk, or behavior."
+  ],
+  "files": {
+    "areas": "areas.json",
+    "places": "places.json",
+    "legacy": "legacy-samples.json",
+    "scope": "sample-scope.json",
+    "apiManifest": "api-acquisition-manifest.json",
+    "tileManifest": "worship-tile-manifest.json"
+  }
+}

@@ -1,0 +1,859 @@
+{
+  "schemaVersion": 1,
+  "evaluationId": "independent-demo-cases-2026-10-21-v1",
+  "frozenAt": "2026-10-20T17:20:41.788Z",
+  "author": "Independent Codex review agent; cases authored against source corpus",
+  "split": {
+    "role": "demonstration-exposed-validation",
+    "heldOut": false,
+    "reason": "Exposed to implementer for fixes; no user-behavior or unseen-query generalization claim"
+  },
+  "identityContract": "lowercase area type + colon + source id; POI type normalized to place. Same name is not an identity match.",
+  "corpus": {
+    "areas": 17062,
+    "pois": 1491,
+    "sha256": {
+      "areas": "e5d0ae540a64482ef38e53f6f3d9d5b8a2f75934650a79bf76fd0a06dcfc6f69",
+      "pois": "9c00110c494fd51fb7889ffaea69b558a590ce53cba984660e8bfca2f97ae065"
+    }
+  },
+  "metricContract": {
+    "retrieval": "any acceptable ID in first topK",
+    "ambiguity": "allRequired IDs reachable in first topK, required ambiguous status, no autoSelect",
+    "category": "exact source-enum-derived entity set, no omitted or additional identities",
+    "abstention": "completed query has zero results; error is fail",
+    "candidateRecall": "not measured: API does not expose candidate pool",
+    "baseline": "only same-query captured current public area API results; local legacy approximation reported separately"
+  },
+  "cases": [
+    {
+      "caseId": "A01",
+      "scope": "area",
+      "query": "เชียงใหม่",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A01",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "province:47545867-d3f1-4e13-a5d9-70021b6f8e99"
+        ],
+        "topK": 1
+      }
+    },
+    {
+      "caseId": "A02",
+      "scope": "area",
+      "query": "เชียงหใม่",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A02",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "province:47545867-d3f1-4e13-a5d9-70021b6f8e99"
+        ],
+        "topK": 5
+      }
+    },
+    {
+      "caseId": "A03",
+      "scope": "area",
+      "query": "เชียงใหม",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A03",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "province:47545867-d3f1-4e13-a5d9-70021b6f8e99"
+        ],
+        "topK": 5
+      }
+    },
+    {
+      "caseId": "A04",
+      "scope": "area",
+      "query": "ขอนเเก่น",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A04",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "province:1299fa9a-ae2c-48a2-9a89-2b8988e3ea0e"
+        ],
+        "topK": 1
+      }
+    },
+    {
+      "caseId": "A05",
+      "scope": "area",
+      "query": "จ.เชียงใหม่",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A05",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "province:47545867-d3f1-4e13-a5d9-70021b6f8e99"
+        ],
+        "topK": 1,
+        "exactEntitySet": true
+      }
+    },
+    {
+      "caseId": "A06",
+      "scope": "area",
+      "query": "10",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A06",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "province:a29ec31e-3a36-4ab7-9670-7cef38873c80"
+        ],
+        "topK": 1,
+        "exactEntitySet": true
+      }
+    },
+    {
+      "caseId": "A07",
+      "scope": "area",
+      "query": "๑๐",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A07",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "province:a29ec31e-3a36-4ab7-9670-7cef38873c80"
+        ],
+        "topK": 1,
+        "exactEntitySet": true
+      }
+    },
+    {
+      "caseId": "A08",
+      "scope": "area",
+      "query": "ปง",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A08",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "ambiguity",
+        "acceptableIdentities": [
+          "district:eaa77602-169d-49d3-976d-8c150913fe26",
+          "subdistrict:7410bd87-f3e0-47dc-9f1e-0a8470d5a500",
+          "municipality:02c8a5fc-f0da-4862-9f36-bcc35d6fa200"
+        ],
+        "allRequiredIdentities": [
+          "district:eaa77602-169d-49d3-976d-8c150913fe26",
+          "subdistrict:7410bd87-f3e0-47dc-9f1e-0a8470d5a500",
+          "municipality:02c8a5fc-f0da-4862-9f36-bcc35d6fa200"
+        ],
+        "topK": 5,
+        "requiredStatus": "ambiguous"
+      }
+    },
+    {
+      "caseId": "A09",
+      "scope": "area",
+      "query": "อ.ปง",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A09",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "district:eaa77602-169d-49d3-976d-8c150913fe26"
+        ],
+        "topK": 1,
+        "exactEntitySet": true
+      }
+    },
+    {
+      "caseId": "A10",
+      "scope": "area",
+      "query": "g=up'.s,j",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A10",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "province:47545867-d3f1-4e13-a5d9-70021b6f8e99"
+        ],
+        "topK": 5,
+        "suggestionRequired": true
+      }
+    },
+    {
+      "caseId": "A11",
+      "scope": "area",
+      "query": "หาดใหญ่ สงขลา",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A11",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "district:79099795-aaf4-4efe-9c0d-86d53f6faa48"
+        ],
+        "topK": 5
+      }
+    },
+    {
+      "caseId": "A12",
+      "scope": "area",
+      "query": "อ.บางรัก จ.กรุงเทพมหานคร",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A12",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "district:8fc70f2c-b096-45d2-baf9-eb1863f870dc"
+        ],
+        "topK": 1,
+        "exactEntitySet": true
+      }
+    },
+    {
+      "caseId": "A13",
+      "scope": "area",
+      "query": "อ.บางรัก จ.เชียงใหม่",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A13",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "abstention",
+        "mustBlank": true,
+        "reason": "ไม่มีอำเภอบางรักภายใต้จังหวัดเชียงใหม่ใน corpus",
+        "requiredWarnings": []
+      }
+    },
+    {
+      "caseId": "A14",
+      "scope": "area",
+      "query": "ลอง",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A14",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "district:845fd76b-b01e-4586-9301-a26ee035305a"
+        ],
+        "topK": 5
+      }
+    },
+    {
+      "caseId": "A15",
+      "scope": "area",
+      "query": "991234",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A15",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "abstention",
+        "mustBlank": true,
+        "reason": "ไม่มีรหัสนี้ใน corpus และไม่ให้ fuzzy แก้รหัส",
+        "requiredWarnings": []
+      }
+    },
+    {
+      "caseId": "A16",
+      "scope": "area",
+      "query": "hotel",
+      "options": {
+        "mode": "area"
+      },
+      "familyId": "A16",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "abstention",
+        "mustBlank": true,
+        "reason": "คำนี้ไม่ใช่ชื่อพื้นที่ใน corpus",
+        "requiredWarnings": []
+      }
+    },
+    {
+      "caseId": "P01",
+      "scope": "new_poi",
+      "query": "วัดอรุณราชวราราม",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P01",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "place:poi:9c460a97cac2b059"
+        ],
+        "topK": 1
+      }
+    },
+    {
+      "caseId": "P02",
+      "scope": "new_poi",
+      "query": "วัดอรุน",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P02",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "place:poi:9c460a97cac2b059"
+        ],
+        "topK": 5
+      }
+    },
+    {
+      "caseId": "P03",
+      "scope": "new_poi",
+      "query": "พระเชตุพนวิมลมังคลาราม",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P03",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "place:poi:5a3a87cf93d453df"
+        ],
+        "topK": 1
+      }
+    },
+    {
+      "caseId": "P04",
+      "scope": "new_poi",
+      "query": "วัดพระจิตเจ้า (สวนเจ็ดริน)",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P04",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "place:poi:6b4f60114a025fb5"
+        ],
+        "topK": 1,
+        "reason": "literal ชื่อที่ขึ้นต้นว่าวัดต้องไม่บังคับเป็นพุทธ"
+      }
+    },
+    {
+      "caseId": "P05",
+      "scope": "new_poi",
+      "query": "วัดแจ้ง",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P05",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "ambiguity",
+        "acceptableIdentities": [
+          "place:poi:5a1a958750ffdecf",
+          "place:poi:ed64d8a105e87b18",
+          "place:poi:20683e705f5a6a27",
+          "place:poi:94b4073ad4b543f9"
+        ],
+        "allRequiredIdentities": [
+          "place:poi:5a1a958750ffdecf",
+          "place:poi:ed64d8a105e87b18",
+          "place:poi:20683e705f5a6a27",
+          "place:poi:94b4073ad4b543f9"
+        ],
+        "topK": 10,
+        "requiredStatus": "ambiguous",
+        "reason": "ชื่อซ้ำ 4 identities ต้องเข้าถึงครบและไม่ auto select"
+      }
+    },
+    {
+      "caseId": "P06",
+      "scope": "new_poi",
+      "query": "วัดแจ้ง จ.สงขลา",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P06",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "place:poi:20683e705f5a6a27"
+        ],
+        "topK": 1,
+        "exactEntitySet": true
+      }
+    },
+    {
+      "caseId": "P07",
+      "scope": "new_poi",
+      "query": "วัดแจ้ง จ.สุรินทร์",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P07",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "place:poi:5a1a958750ffdecf"
+        ],
+        "topK": 1,
+        "exactEntitySet": true
+      }
+    },
+    {
+      "caseId": "P08",
+      "scope": "new_poi",
+      "query": "วัดแจ้ง จ.สุโขทัย",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P08",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "abstention",
+        "mustBlank": true,
+        "reason": "ไม่มีวัดแจ้งในสุโขทัยใน snapshot",
+        "requiredWarnings": []
+      }
+    },
+    {
+      "caseId": "P09",
+      "scope": "new_poi",
+      "query": "วัดพระแก้ว จ.ชัยนาท",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P09",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "place:poi:d0cea663c67736ff"
+        ],
+        "topK": 1,
+        "exactEntitySet": true
+      }
+    },
+    {
+      "caseId": "P10",
+      "scope": "new_poi",
+      "query": "วัดพระแก้ว จ.กรุงเทพมหานคร",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P10",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "abstention",
+        "mustBlank": true,
+        "reason": "snapshot ไม่มี POI นี้ในกรุงเทพมหานคร; ห้ามคืนวัดพระแก้วชัยนาท",
+        "requiredWarnings": []
+      }
+    },
+    {
+      "caseId": "P11",
+      "scope": "new_poi",
+      "query": "วัดพระแก้ว กรุงเทพ",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P11",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "abstention",
+        "mustBlank": true,
+        "reason": "parent phrase กรุงเทพต้องไม่ถูกละทิ้งเพื่อคืนชื่อคนละจังหวัด",
+        "requiredWarnings": []
+      }
+    },
+    {
+      "caseId": "P12",
+      "scope": "new_poi",
+      "query": "มัสยิด เชียงใหม่",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P12",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "category",
+        "acceptableIdentities": [
+          "place:poi:273b584f44e19548"
+        ],
+        "allRequiredIdentities": [
+          "place:poi:273b584f44e19548"
+        ],
+        "exactEntitySet": true,
+        "topK": 500,
+        "reason": "religion source field + province parent"
+      }
+    },
+    {
+      "caseId": "P13",
+      "scope": "new_poi",
+      "query": "mosque Chiang Mai",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P13",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "category",
+        "acceptableIdentities": [
+          "place:poi:273b584f44e19548"
+        ],
+        "allRequiredIdentities": [
+          "place:poi:273b584f44e19548"
+        ],
+        "exactEntitySet": true,
+        "topK": 500,
+        "reason": "ใช้ชื่ออังกฤษจังหวัดที่มีใน source"
+      }
+    },
+    {
+      "caseId": "P14",
+      "scope": "new_poi",
+      "query": "คริสต์ เชียงใหม่",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P14",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "category",
+        "acceptableIdentities": [
+          "place:poi:e6bdb6b575a2208a",
+          "place:poi:6adee7c5de132fb8",
+          "place:poi:d92949c3180d5ea7",
+          "place:poi:4d8a1be8a7553862",
+          "place:poi:6b4f60114a025fb5"
+        ],
+        "allRequiredIdentities": [
+          "place:poi:e6bdb6b575a2208a",
+          "place:poi:6adee7c5de132fb8",
+          "place:poi:d92949c3180d5ea7",
+          "place:poi:4d8a1be8a7553862",
+          "place:poi:6b4f60114a025fb5"
+        ],
+        "exactEntitySet": true,
+        "topK": 500,
+        "reason": "religion source field + province parent"
+      }
+    },
+    {
+      "caseId": "P15",
+      "scope": "new_poi",
+      "query": "โบสถ์ เชียงใหม่",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P15",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "category",
+        "acceptableIdentities": [
+          "place:poi:e6bdb6b575a2208a",
+          "place:poi:6adee7c5de132fb8",
+          "place:poi:d92949c3180d5ea7",
+          "place:poi:4d8a1be8a7553862",
+          "place:poi:6b4f60114a025fb5"
+        ],
+        "allRequiredIdentities": [
+          "place:poi:e6bdb6b575a2208a",
+          "place:poi:6adee7c5de132fb8",
+          "place:poi:d92949c3180d5ea7",
+          "place:poi:4d8a1be8a7553862",
+          "place:poi:6b4f60114a025fb5"
+        ],
+        "exactEntitySet": true,
+        "topK": 500,
+        "reason": "query กำกวม ต้องอธิบายความหมายที่รองรับจาก source โดยไม่อนุมานอุโบสถทุกวัด",
+        "requiredWarnings": [
+          "ambiguous_category_term"
+        ]
+      }
+    },
+    {
+      "caseId": "P16",
+      "scope": "new_poi",
+      "query": "ซิกข์ ภูเก็ต",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P16",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "category",
+        "acceptableIdentities": [
+          "place:poi:7880a333e64e72c4"
+        ],
+        "allRequiredIdentities": [
+          "place:poi:7880a333e64e72c4"
+        ],
+        "exactEntitySet": true,
+        "topK": 500,
+        "reason": "source has exactly one Sikh POI"
+      }
+    },
+    {
+      "caseId": "P17",
+      "scope": "new_poi",
+      "query": "วัดซิกข์ศรีคุรุสิงห์สภา",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P17",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "retrieval",
+        "acceptableIdentities": [
+          "place:poi:7880a333e64e72c4"
+        ],
+        "topK": 1
+      }
+    },
+    {
+      "caseId": "P18",
+      "scope": "new_poi",
+      "query": "ฮินดู",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P18",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "abstention",
+        "mustBlank": true,
+        "reason": "snapshot ไม่มี Hindu source records ไม่ใช่ข้อสรุปว่าไม่มีศาสนสถานฮินดูจริง",
+        "requiredWarnings": []
+      }
+    },
+    {
+      "caseId": "P19",
+      "scope": "new_poi",
+      "query": "วัด อิสลาม",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P19",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "abstention",
+        "mustBlank": true,
+        "reason": "mixed type/religion cues ต้องไม่เดาไปวัดอิสานซึ่งเป็น Buddhist",
+        "requiredWarnings": []
+      }
+    },
+    {
+      "caseId": "P20",
+      "scope": "new_poi",
+      "query": "วัดราษฎร์ จ.สุโขทัย",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P20",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "category",
+        "acceptableIdentities": [
+          "place:poi:01407f688cbba198",
+          "place:poi:9b34ffcff211dbb7",
+          "place:poi:3550de7d25b8988d",
+          "place:poi:7eb37db1e2e4a9c7",
+          "place:poi:2bc352b51a46fc14"
+        ],
+        "allRequiredIdentities": [
+          "place:poi:01407f688cbba198",
+          "place:poi:9b34ffcff211dbb7",
+          "place:poi:3550de7d25b8988d",
+          "place:poi:7eb37db1e2e4a9c7",
+          "place:poi:2bc352b51a46fc14"
+        ],
+        "exactEntitySet": true,
+        "topK": 500,
+        "reason": "source templeType enum must be searchable"
+      }
+    },
+    {
+      "caseId": "P21",
+      "scope": "new_poi",
+      "query": "วัดร้าง จ.สุโขทัย",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P21",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "category",
+        "acceptableIdentities": [
+          "place:poi:450e774a3c6af1b8",
+          "place:poi:dcb8742da832b230",
+          "place:poi:0a28882d4a1c5096",
+          "place:poi:8528a22bcf5b52e3",
+          "place:poi:92830c8078691d41",
+          "place:poi:fefec648f68a8ff7",
+          "place:poi:d98c1d0d8bc9bdfd",
+          "place:poi:b8a680c6904dcfe8",
+          "place:poi:f2ed48531f0225a8",
+          "place:poi:ccb8cfe40e44801e",
+          "place:poi:0edebcbdbbe0c148",
+          "place:poi:1dbd3c21e4a8be13"
+        ],
+        "allRequiredIdentities": [
+          "place:poi:450e774a3c6af1b8",
+          "place:poi:dcb8742da832b230",
+          "place:poi:0a28882d4a1c5096",
+          "place:poi:8528a22bcf5b52e3",
+          "place:poi:92830c8078691d41",
+          "place:poi:fefec648f68a8ff7",
+          "place:poi:d98c1d0d8bc9bdfd",
+          "place:poi:b8a680c6904dcfe8",
+          "place:poi:f2ed48531f0225a8",
+          "place:poi:ccb8cfe40e44801e",
+          "place:poi:0edebcbdbbe0c148",
+          "place:poi:1dbd3c21e4a8be13"
+        ],
+        "exactEntitySet": true,
+        "topK": 500,
+        "reason": "source status + province; not inferred only from display name"
+      }
+    },
+    {
+      "caseId": "P22",
+      "scope": "new_poi",
+      "query": "มัสยิด เชียงใหม่",
+      "options": {
+        "mode": "all",
+        "religion": "buddhist"
+      },
+      "familyId": "P22",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "abstention",
+        "mustBlank": true,
+        "reason": "contradictory selected religion and query religion",
+        "requiredWarnings": [
+          "conflicting_religion_filters"
+        ]
+      }
+    },
+    {
+      "caseId": "P23",
+      "scope": "new_poi",
+      "query": "มัสยิด จ.เชียงใหม",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P23",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "abstention",
+        "mustBlank": true,
+        "reason": "unverified misspelled explicit parent conservatively declines rather than cross-scope fallback",
+        "requiredWarnings": [
+          "explicit_scope_not_found"
+        ]
+      }
+    },
+    {
+      "caseId": "P24",
+      "scope": "new_poi",
+      "query": "วัดแจ้ง จ.สงขลา จ.สุรินทร์",
+      "options": {
+        "mode": "all"
+      },
+      "familyId": "P24",
+      "splitRole": "demonstration-exposed-validation",
+      "expectation": {
+        "autoSelect": false,
+        "outcome": "abstention",
+        "mustBlank": true,
+        "reason": "two mutually exclusive explicit provinces",
+        "requiredWarnings": [
+          "conflicting_explicit_scopes"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+name: Search regression
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Preserve base-branch cases and run regression
+        env:
+          REGRESSION_BASE_REF: ${{ github.event.pull_request.base.sha }}
+          LABEL_CORRECTION_APPROVED: ${{ contains(github.event.pull_request.labels.*.name, 'approved-label-correction') }}
+          LABEL_CORRECTIONS_FILE: ${{ contains(github.event.pull_request.labels.*.name, 'approved-label-correction') && '.ci/label-corrections.json' || '' }}
+        run: npm run test:regression

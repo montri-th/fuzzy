@@ -1,0 +1,1728 @@
+{
+  "schemaVersion": 1,
+  "evaluationId": "independent-demo-cases-2026-10-21-v1",
+  "evaluatedAt": "2026-10-20T17:24:24.136Z",
+  "status": "pass",
+  "engine": {
+    "version": "citymeter-fuzzy-demo-1.0.0",
+    "normalizerVersion": "thai-sidecar-1",
+    "sha256": "ac832ede36fb77ce99caf02ecb3bad7a4ebfc6554059af1d29473407f73e3ef4",
+    "stableDuringRun": true
+  },
+  "corpus": {
+    "areas": 17062,
+    "pois": 1491,
+    "sha256": {
+      "areas": "e5d0ae540a64482ef38e53f6f3d9d5b8a2f75934650a79bf76fd0a06dcfc6f69",
+      "pois": "9c00110c494fd51fb7889ffaea69b558a590ce53cba984660e8bfca2f97ae065"
+    }
+  },
+  "split": {
+    "role": "demonstration-exposed-validation",
+    "heldOut": false,
+    "humanLabelReview": false
+  },
+  "summary": {
+    "area": {
+      "completed": 16,
+      "cases": 16,
+      "contractPass": 16,
+      "retrieval": {
+        "passed": 12,
+        "total": 12
+      },
+      "categoryExactSet": {
+        "passed": 0,
+        "total": 0
+      },
+      "abstention": {
+        "passed": 3,
+        "total": 3
+      },
+      "ambiguity": {
+        "passed": 1,
+        "total": 1
+      },
+      "failures": []
+    },
+    "new_poi": {
+      "completed": 24,
+      "cases": 24,
+      "contractPass": 24,
+      "retrieval": {
+        "passed": 8,
+        "total": 8
+      },
+      "categoryExactSet": {
+        "passed": 7,
+        "total": 7
+      },
+      "abstention": {
+        "passed": 8,
+        "total": 8
+      },
+      "ambiguity": {
+        "passed": 1,
+        "total": 1
+      },
+      "failures": []
+    },
+    "capturedLiveComparison": {
+      "sameQueryAreaCases": 10,
+      "retrievalCases": 9,
+      "liveAcceptableAtRequiredK": 2,
+      "newAcceptableAtRequiredK": 9,
+      "caseIds": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A10",
+        "A11",
+        "A14",
+        "A16"
+      ],
+      "limitations": "Current area API snapshots only; not original October 9 build. New POI scope has no comparable original POI search baseline."
+    }
+  },
+  "sourceNameConformanceSweep": {
+    "total": 1491,
+    "passed": 1491,
+    "failed": 0,
+    "meaning": "Exact source-name reachability only; no user-query quality or completeness claim"
+  },
+  "limits": [
+    "Frozen demonstration cases exposed to engine author for fixes; no holdout/general user-quality estimate.",
+    "Actual current public area API snapshots for 15 preset queries; other legacy results are explicitly local approximations.",
+    "No comparable original POI search baseline.",
+    "No production or network speed claim.",
+    "No private complaint data included."
+  ],
+  "cases": [
+    {
+      "caseId": "A01",
+      "scope": "area",
+      "query": "เชียงใหม่",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "province:47545867-d3f1-4e13-a5d9-70021b6f8e99"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "ambiguous",
+        "total": 7,
+        "top": [
+          {
+            "id": "province:47545867-d3f1-4e13-a5d9-70021b6f8e99",
+            "name": "เชียงใหม่",
+            "kind": "literal"
+          },
+          {
+            "id": "subdistrict:98568125-17b1-4c25-9b18-868d5a093ec0",
+            "name": "เชียงใหม่",
+            "kind": "literal"
+          },
+          {
+            "id": "municipality:cc68dc37-079a-4c6a-bb47-a47299f6e958",
+            "name": "เทศบาลนคร เชียงใหม่",
+            "kind": "literal"
+          },
+          {
+            "id": "municipality:294adb91-b478-4432-b97d-83e22b0d92e0",
+            "name": "เทศบาลตำบล เชียงใหม่",
+            "kind": "literal"
+          },
+          {
+            "id": "district:7e65c8e6-ce1a-4be3-8d39-05312c624408",
+            "name": "ศรีเชียงใหม่",
+            "kind": "substring"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": {
+        "retrievedAt": "2026-10-20T17:12:27.334915+00:00",
+        "total": 7,
+        "firstAcceptedRank": 1,
+        "acceptableAtRequiredK": true
+      }
+    },
+    {
+      "caseId": "A02",
+      "scope": "area",
+      "query": "เชียงหใม่",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "province:47545867-d3f1-4e13-a5d9-70021b6f8e99"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 5,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "suggestions",
+        "total": 8,
+        "top": [
+          {
+            "id": "province:47545867-d3f1-4e13-a5d9-70021b6f8e99",
+            "name": "เชียงใหม่",
+            "kind": "typo"
+          },
+          {
+            "id": "subdistrict:98568125-17b1-4c25-9b18-868d5a093ec0",
+            "name": "เชียงใหม่",
+            "kind": "typo"
+          },
+          {
+            "id": "municipality:cc68dc37-079a-4c6a-bb47-a47299f6e958",
+            "name": "เทศบาลนคร เชียงใหม่",
+            "kind": "typo"
+          },
+          {
+            "id": "municipality:294adb91-b478-4432-b97d-83e22b0d92e0",
+            "name": "เทศบาลตำบล เชียงใหม่",
+            "kind": "typo"
+          },
+          {
+            "id": "subdistrict:b984e95b-974d-4bcf-9e1a-d0efbd5988ae",
+            "name": "เชียงกลม",
+            "kind": "typo"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": {
+        "retrievedAt": "2026-10-20T17:12:27.341450+00:00",
+        "total": 0,
+        "firstAcceptedRank": null,
+        "acceptableAtRequiredK": false
+      }
+    },
+    {
+      "caseId": "A03",
+      "scope": "area",
+      "query": "เชียงใหม",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "province:47545867-d3f1-4e13-a5d9-70021b6f8e99"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 5,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "ambiguous",
+        "total": 7,
+        "top": [
+          {
+            "id": "province:47545867-d3f1-4e13-a5d9-70021b6f8e99",
+            "name": "เชียงใหม่",
+            "kind": "normalized"
+          },
+          {
+            "id": "subdistrict:98568125-17b1-4c25-9b18-868d5a093ec0",
+            "name": "เชียงใหม่",
+            "kind": "normalized"
+          },
+          {
+            "id": "municipality:cc68dc37-079a-4c6a-bb47-a47299f6e958",
+            "name": "เทศบาลนคร เชียงใหม่",
+            "kind": "normalized"
+          },
+          {
+            "id": "municipality:294adb91-b478-4432-b97d-83e22b0d92e0",
+            "name": "เทศบาลตำบล เชียงใหม่",
+            "kind": "normalized"
+          },
+          {
+            "id": "district:7e65c8e6-ce1a-4be3-8d39-05312c624408",
+            "name": "ศรีเชียงใหม่",
+            "kind": "substring"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": {
+        "retrievedAt": "2026-10-20T17:12:27.301030+00:00",
+        "total": 7,
+        "firstAcceptedRank": 1,
+        "acceptableAtRequiredK": true
+      }
+    },
+    {
+      "caseId": "A04",
+      "scope": "area",
+      "query": "ขอนเเก่น",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "province:1299fa9a-ae2c-48a2-9a89-2b8988e3ea0e"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "ambiguous",
+        "total": 7,
+        "top": [
+          {
+            "id": "province:1299fa9a-ae2c-48a2-9a89-2b8988e3ea0e",
+            "name": "ขอนแก่น",
+            "kind": "normalized"
+          },
+          {
+            "id": "subdistrict:bf288050-7796-41c2-a162-10ecbd084849",
+            "name": "ขอนแก่น",
+            "kind": "normalized"
+          },
+          {
+            "id": "municipality:fb39c240-cf09-464b-9fdc-790c0506fd2d",
+            "name": "เทศบาลนคร ขอนแก่น",
+            "kind": "normalized"
+          },
+          {
+            "id": "municipality:b3628f97-82fe-4e7d-aaf9-1478d644e4ca",
+            "name": "องค์การบริหารส่วนตำบล ขอนแก่น",
+            "kind": "normalized"
+          },
+          {
+            "id": "district:20f76263-01b6-425e-a5ea-d298caa7ed38",
+            "name": "เมืองขอนแก่น",
+            "kind": "substring"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": {
+        "retrievedAt": "2026-10-20T17:12:27.563944+00:00",
+        "total": 0,
+        "firstAcceptedRank": null,
+        "acceptableAtRequiredK": false
+      }
+    },
+    {
+      "caseId": "A05",
+      "scope": "area",
+      "query": "จ.เชียงใหม่",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "province:47545867-d3f1-4e13-a5d9-70021b6f8e99"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 1,
+        "top": [
+          {
+            "id": "province:47545867-d3f1-4e13-a5d9-70021b6f8e99",
+            "name": "เชียงใหม่",
+            "kind": "literal"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": {
+        "retrievedAt": "2026-10-20T17:12:27.863572+00:00",
+        "total": 0,
+        "firstAcceptedRank": null,
+        "acceptableAtRequiredK": false
+      }
+    },
+    {
+      "caseId": "A06",
+      "scope": "area",
+      "query": "10",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "province:a29ec31e-3a36-4ab7-9670-7cef38873c80"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 1,
+        "top": [
+          {
+            "id": "province:a29ec31e-3a36-4ab7-9670-7cef38873c80",
+            "name": "กรุงเทพมหานคร",
+            "kind": "code"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": {
+        "retrievedAt": "2026-10-20T17:12:27.685823+00:00",
+        "total": 0,
+        "firstAcceptedRank": null,
+        "acceptableAtRequiredK": false
+      }
+    },
+    {
+      "caseId": "A07",
+      "scope": "area",
+      "query": "๑๐",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "province:a29ec31e-3a36-4ab7-9670-7cef38873c80"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 1,
+        "top": [
+          {
+            "id": "province:a29ec31e-3a36-4ab7-9670-7cef38873c80",
+            "name": "กรุงเทพมหานคร",
+            "kind": "code"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "A08",
+      "scope": "area",
+      "query": "ปง",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "ambiguity",
+        "acceptableIds": [
+          "district:eaa77602-169d-49d3-976d-8c150913fe26",
+          "subdistrict:7410bd87-f3e0-47dc-9f1e-0a8470d5a500",
+          "municipality:02c8a5fc-f0da-4862-9f36-bcc35d6fa200"
+        ],
+        "requiredIds": [
+          "district:eaa77602-169d-49d3-976d-8c150913fe26",
+          "subdistrict:7410bd87-f3e0-47dc-9f1e-0a8470d5a500",
+          "municipality:02c8a5fc-f0da-4862-9f36-bcc35d6fa200"
+        ],
+        "mustBlank": false,
+        "topK": 5,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "ambiguous",
+        "total": 20,
+        "top": [
+          {
+            "id": "district:eaa77602-169d-49d3-976d-8c150913fe26",
+            "name": "ปง",
+            "kind": "literal"
+          },
+          {
+            "id": "subdistrict:7410bd87-f3e0-47dc-9f1e-0a8470d5a500",
+            "name": "ปง",
+            "kind": "literal"
+          },
+          {
+            "id": "municipality:02c8a5fc-f0da-4862-9f36-bcc35d6fa200",
+            "name": "เทศบาลตำบล ปง",
+            "kind": "literal"
+          },
+          {
+            "id": "subdistrict:e32dcedd-ee72-472e-86fe-1ee0b2d457c2",
+            "name": "ปงตำ",
+            "kind": "prefix"
+          },
+          {
+            "id": "subdistrict:eced2590-9798-434d-a305-0d9c096281b8",
+            "name": "ปงดอน",
+            "kind": "prefix"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "A09",
+      "scope": "area",
+      "query": "อ.ปง",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "district:eaa77602-169d-49d3-976d-8c150913fe26"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 1,
+        "top": [
+          {
+            "id": "district:eaa77602-169d-49d3-976d-8c150913fe26",
+            "name": "ปง",
+            "kind": "literal"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "A10",
+      "scope": "area",
+      "query": "g=up'.s,j",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "province:47545867-d3f1-4e13-a5d9-70021b6f8e99"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 5,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "suggestions",
+        "total": 4,
+        "top": [
+          {
+            "id": "province:47545867-d3f1-4e13-a5d9-70021b6f8e99",
+            "name": "เชียงใหม่",
+            "kind": "keyboard"
+          },
+          {
+            "id": "subdistrict:98568125-17b1-4c25-9b18-868d5a093ec0",
+            "name": "เชียงใหม่",
+            "kind": "keyboard"
+          },
+          {
+            "id": "municipality:cc68dc37-079a-4c6a-bb47-a47299f6e958",
+            "name": "เทศบาลนคร เชียงใหม่",
+            "kind": "keyboard"
+          },
+          {
+            "id": "municipality:294adb91-b478-4432-b97d-83e22b0d92e0",
+            "name": "เทศบาลตำบล เชียงใหม่",
+            "kind": "keyboard"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": {
+        "retrievedAt": "2026-10-20T17:12:28.004583+00:00",
+        "total": 0,
+        "firstAcceptedRank": null,
+        "acceptableAtRequiredK": false
+      }
+    },
+    {
+      "caseId": "A11",
+      "scope": "area",
+      "query": "หาดใหญ่ สงขลา",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "district:79099795-aaf4-4efe-9c0d-86d53f6faa48"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 5,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "ambiguous",
+        "total": 3,
+        "top": [
+          {
+            "id": "district:79099795-aaf4-4efe-9c0d-86d53f6faa48",
+            "name": "หาดใหญ่",
+            "kind": "literal"
+          },
+          {
+            "id": "subdistrict:0226b164-1869-42b0-901d-472a5b607eff",
+            "name": "หาดใหญ่",
+            "kind": "literal"
+          },
+          {
+            "id": "municipality:7c58a5d2-c6a6-4f4e-812e-c7bd25ae1a0d",
+            "name": "เทศบาลนคร หาดใหญ่",
+            "kind": "literal"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": {
+        "retrievedAt": "2026-10-20T17:12:27.997118+00:00",
+        "total": 0,
+        "firstAcceptedRank": null,
+        "acceptableAtRequiredK": false
+      }
+    },
+    {
+      "caseId": "A12",
+      "scope": "area",
+      "query": "อ.บางรัก จ.กรุงเทพมหานคร",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "district:8fc70f2c-b096-45d2-baf9-eb1863f870dc"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 1,
+        "top": [
+          {
+            "id": "district:8fc70f2c-b096-45d2-baf9-eb1863f870dc",
+            "name": "บางรัก",
+            "kind": "literal"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "A13",
+      "scope": "area",
+      "query": "อ.บางรัก จ.เชียงใหม่",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "abstention",
+        "acceptableIds": [],
+        "requiredIds": [],
+        "mustBlank": true,
+        "topK": null,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "no_scope_match",
+        "total": 0,
+        "top": [],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": null,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "A14",
+      "scope": "area",
+      "query": "ลอง",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "district:845fd76b-b01e-4586-9301-a26ee035305a"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 5,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 434,
+        "top": [
+          {
+            "id": "district:845fd76b-b01e-4586-9301-a26ee035305a",
+            "name": "ลอง",
+            "kind": "literal"
+          },
+          {
+            "id": "district:41d0a732-2b41-48e7-b593-3180c8949089",
+            "name": "คลองเตย",
+            "kind": "substring"
+          },
+          {
+            "id": "district:df4d7eb5-4247-42aa-9216-8c9f2643765a",
+            "name": "คลองลาน",
+            "kind": "substring"
+          },
+          {
+            "id": "district:b756172a-fbbd-4c61-a532-2583b00be4ff",
+            "name": "คลองสาน",
+            "kind": "substring"
+          },
+          {
+            "id": "district:e25bd9c0-670f-45b8-84e2-0e6c90532f75",
+            "name": "คลองหาด",
+            "kind": "substring"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": {
+        "retrievedAt": "2026-10-20T17:12:27.593831+00:00",
+        "total": 40,
+        "firstAcceptedRank": null,
+        "acceptableAtRequiredK": false
+      }
+    },
+    {
+      "caseId": "A15",
+      "scope": "area",
+      "query": "991234",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "abstention",
+        "acceptableIds": [],
+        "requiredIds": [],
+        "mustBlank": true,
+        "topK": null,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "unresolved",
+        "total": 0,
+        "top": [],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": null,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "A16",
+      "scope": "area",
+      "query": "hotel",
+      "options": {
+        "mode": "area"
+      },
+      "expected": {
+        "outcome": "abstention",
+        "acceptableIds": [],
+        "requiredIds": [],
+        "mustBlank": true,
+        "topK": null,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "unresolved",
+        "total": 0,
+        "top": [],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": null,
+      "capturedLiveArea": {
+        "retrievedAt": "2026-10-20T17:12:27.801311+00:00",
+        "total": 0,
+        "firstAcceptedRank": null,
+        "acceptableAtRequiredK": null
+      }
+    },
+    {
+      "caseId": "P01",
+      "scope": "new_poi",
+      "query": "วัดอรุณราชวราราม",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "place:poi:9c460a97cac2b059"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 1,
+        "top": [
+          {
+            "id": "place:poi:9c460a97cac2b059",
+            "name": "วัดอรุณราชวราราม",
+            "kind": "literal"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P02",
+      "scope": "new_poi",
+      "query": "วัดอรุน",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "place:poi:9c460a97cac2b059"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 5,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "suggestions",
+        "total": 2,
+        "top": [
+          {
+            "id": "place:poi:e69d1d7490170862",
+            "name": "วัดอรุณสวัสดิ์",
+            "kind": "phonetic-prefix"
+          },
+          {
+            "id": "place:poi:9c460a97cac2b059",
+            "name": "วัดอรุณราชวราราม",
+            "kind": "phonetic-prefix"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 2,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P03",
+      "scope": "new_poi",
+      "query": "พระเชตุพนวิมลมังคลาราม",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "place:poi:5a3a87cf93d453df"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 1,
+        "top": [
+          {
+            "id": "place:poi:5a3a87cf93d453df",
+            "name": "วัดพระเชตุพนวิมลมังคลาราม",
+            "kind": "literal"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P04",
+      "scope": "new_poi",
+      "query": "วัดพระจิตเจ้า (สวนเจ็ดริน)",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "place:poi:6b4f60114a025fb5"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 1,
+        "top": [
+          {
+            "id": "place:poi:6b4f60114a025fb5",
+            "name": "วัดพระจิตเจ้า (สวนเจ็ดริน)",
+            "kind": "literal"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P05",
+      "scope": "new_poi",
+      "query": "วัดแจ้ง",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "ambiguity",
+        "acceptableIds": [
+          "place:poi:5a1a958750ffdecf",
+          "place:poi:ed64d8a105e87b18",
+          "place:poi:20683e705f5a6a27",
+          "place:poi:94b4073ad4b543f9"
+        ],
+        "requiredIds": [
+          "place:poi:5a1a958750ffdecf",
+          "place:poi:ed64d8a105e87b18",
+          "place:poi:20683e705f5a6a27",
+          "place:poi:94b4073ad4b543f9"
+        ],
+        "mustBlank": false,
+        "topK": 10,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "ambiguous",
+        "total": 8,
+        "top": [
+          {
+            "id": "place:poi:20683e705f5a6a27",
+            "name": "วัดแจ้ง",
+            "kind": "literal"
+          },
+          {
+            "id": "place:poi:5a1a958750ffdecf",
+            "name": "วัดแจ้ง",
+            "kind": "literal"
+          },
+          {
+            "id": "place:poi:94b4073ad4b543f9",
+            "name": "วัดแจ้ง",
+            "kind": "literal"
+          },
+          {
+            "id": "place:poi:ed64d8a105e87b18",
+            "name": "วัดแจ้ง",
+            "kind": "literal"
+          },
+          {
+            "id": "place:poi:b35707a8b7cff40e",
+            "name": "วัดแจ้งใน",
+            "kind": "prefix"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P06",
+      "scope": "new_poi",
+      "query": "วัดแจ้ง จ.สงขลา",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "place:poi:20683e705f5a6a27"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 1,
+        "top": [
+          {
+            "id": "place:poi:20683e705f5a6a27",
+            "name": "วัดแจ้ง",
+            "kind": "literal"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P07",
+      "scope": "new_poi",
+      "query": "วัดแจ้ง จ.สุรินทร์",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "place:poi:5a1a958750ffdecf"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 1,
+        "top": [
+          {
+            "id": "place:poi:5a1a958750ffdecf",
+            "name": "วัดแจ้ง",
+            "kind": "literal"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P08",
+      "scope": "new_poi",
+      "query": "วัดแจ้ง จ.สุโขทัย",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "abstention",
+        "acceptableIds": [],
+        "requiredIds": [],
+        "mustBlank": true,
+        "topK": null,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "no_scope_match",
+        "total": 0,
+        "top": [],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": null,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P09",
+      "scope": "new_poi",
+      "query": "วัดพระแก้ว จ.ชัยนาท",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "place:poi:d0cea663c67736ff"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 1,
+        "top": [
+          {
+            "id": "place:poi:d0cea663c67736ff",
+            "name": "วัดพระแก้ว",
+            "kind": "literal"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P10",
+      "scope": "new_poi",
+      "query": "วัดพระแก้ว จ.กรุงเทพมหานคร",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "abstention",
+        "acceptableIds": [],
+        "requiredIds": [],
+        "mustBlank": true,
+        "topK": null,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "no_scope_match",
+        "total": 0,
+        "top": [],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": null,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P11",
+      "scope": "new_poi",
+      "query": "วัดพระแก้ว กรุงเทพ",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "abstention",
+        "acceptableIds": [],
+        "requiredIds": [],
+        "mustBlank": true,
+        "topK": null,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "unresolved",
+        "total": 0,
+        "top": [],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": null,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P12",
+      "scope": "new_poi",
+      "query": "มัสยิด เชียงใหม่",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "category",
+        "acceptableIds": [
+          "place:poi:273b584f44e19548"
+        ],
+        "requiredIds": [
+          "place:poi:273b584f44e19548"
+        ],
+        "mustBlank": false,
+        "topK": 500,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "matched",
+        "total": 1,
+        "top": [
+          {
+            "id": "place:poi:273b584f44e19548",
+            "name": "อัลอิมานิ",
+            "kind": "category"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P13",
+      "scope": "new_poi",
+      "query": "mosque Chiang Mai",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "category",
+        "acceptableIds": [
+          "place:poi:273b584f44e19548"
+        ],
+        "requiredIds": [
+          "place:poi:273b584f44e19548"
+        ],
+        "mustBlank": false,
+        "topK": 500,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "matched",
+        "total": 1,
+        "top": [
+          {
+            "id": "place:poi:273b584f44e19548",
+            "name": "อัลอิมานิ",
+            "kind": "category"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P14",
+      "scope": "new_poi",
+      "query": "คริสต์ เชียงใหม่",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "category",
+        "acceptableIds": [
+          "place:poi:e6bdb6b575a2208a",
+          "place:poi:6adee7c5de132fb8",
+          "place:poi:d92949c3180d5ea7",
+          "place:poi:4d8a1be8a7553862",
+          "place:poi:6b4f60114a025fb5"
+        ],
+        "requiredIds": [
+          "place:poi:e6bdb6b575a2208a",
+          "place:poi:6adee7c5de132fb8",
+          "place:poi:d92949c3180d5ea7",
+          "place:poi:4d8a1be8a7553862",
+          "place:poi:6b4f60114a025fb5"
+        ],
+        "mustBlank": false,
+        "topK": 500,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "matched",
+        "total": 5,
+        "top": [
+          {
+            "id": "place:poi:4d8a1be8a7553862",
+            "name": "อาสนวิหารพระหฤทัย เชียงใหม่",
+            "kind": "substring"
+          },
+          {
+            "id": "place:poi:d92949c3180d5ea7",
+            "name": "ข่าวประเสริฐฝาง",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:6adee7c5de132fb8",
+            "name": "คริสตจักรท่าสะแล",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:6b4f60114a025fb5",
+            "name": "วัดพระจิตเจ้า (สวนเจ็ดริน)",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:e6bdb6b575a2208a",
+            "name": "คริสตจักรนาซาเร็ธของประชาชาติ",
+            "kind": "category"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P15",
+      "scope": "new_poi",
+      "query": "โบสถ์ เชียงใหม่",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "category",
+        "acceptableIds": [
+          "place:poi:e6bdb6b575a2208a",
+          "place:poi:6adee7c5de132fb8",
+          "place:poi:d92949c3180d5ea7",
+          "place:poi:4d8a1be8a7553862",
+          "place:poi:6b4f60114a025fb5"
+        ],
+        "requiredIds": [
+          "place:poi:e6bdb6b575a2208a",
+          "place:poi:6adee7c5de132fb8",
+          "place:poi:d92949c3180d5ea7",
+          "place:poi:4d8a1be8a7553862",
+          "place:poi:6b4f60114a025fb5"
+        ],
+        "mustBlank": false,
+        "topK": 500,
+        "requiredWarnings": [
+          "ambiguous_category_term"
+        ]
+      },
+      "actual": {
+        "status": "matched",
+        "total": 5,
+        "top": [
+          {
+            "id": "place:poi:4d8a1be8a7553862",
+            "name": "อาสนวิหารพระหฤทัย เชียงใหม่",
+            "kind": "substring"
+          },
+          {
+            "id": "place:poi:d92949c3180d5ea7",
+            "name": "ข่าวประเสริฐฝาง",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:6adee7c5de132fb8",
+            "name": "คริสตจักรท่าสะแล",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:6b4f60114a025fb5",
+            "name": "วัดพระจิตเจ้า (สวนเจ็ดริน)",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:e6bdb6b575a2208a",
+            "name": "คริสตจักรนาซาเร็ธของประชาชาติ",
+            "kind": "category"
+          }
+        ],
+        "warnings": [
+          "ambiguous_category_term"
+        ]
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P16",
+      "scope": "new_poi",
+      "query": "ซิกข์ ภูเก็ต",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "category",
+        "acceptableIds": [
+          "place:poi:7880a333e64e72c4"
+        ],
+        "requiredIds": [
+          "place:poi:7880a333e64e72c4"
+        ],
+        "mustBlank": false,
+        "topK": 500,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "matched",
+        "total": 1,
+        "top": [
+          {
+            "id": "place:poi:7880a333e64e72c4",
+            "name": "วัดซิกข์ศรีคุรุสิงห์สภา",
+            "kind": "category"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P17",
+      "scope": "new_poi",
+      "query": "วัดซิกข์ศรีคุรุสิงห์สภา",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "retrieval",
+        "acceptableIds": [
+          "place:poi:7880a333e64e72c4"
+        ],
+        "requiredIds": [],
+        "mustBlank": false,
+        "topK": 1,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "resolved",
+        "total": 1,
+        "top": [
+          {
+            "id": "place:poi:7880a333e64e72c4",
+            "name": "วัดซิกข์ศรีคุรุสิงห์สภา",
+            "kind": "literal"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P18",
+      "scope": "new_poi",
+      "query": "ฮินดู",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "abstention",
+        "acceptableIds": [],
+        "requiredIds": [],
+        "mustBlank": true,
+        "topK": null,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "unresolved",
+        "total": 0,
+        "top": [],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": null,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P19",
+      "scope": "new_poi",
+      "query": "วัด อิสลาม",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "abstention",
+        "acceptableIds": [],
+        "requiredIds": [],
+        "mustBlank": true,
+        "topK": null,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "unresolved",
+        "total": 0,
+        "top": [],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": null,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P20",
+      "scope": "new_poi",
+      "query": "วัดราษฎร์ จ.สุโขทัย",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "category",
+        "acceptableIds": [
+          "place:poi:01407f688cbba198",
+          "place:poi:9b34ffcff211dbb7",
+          "place:poi:3550de7d25b8988d",
+          "place:poi:7eb37db1e2e4a9c7",
+          "place:poi:2bc352b51a46fc14"
+        ],
+        "requiredIds": [
+          "place:poi:01407f688cbba198",
+          "place:poi:9b34ffcff211dbb7",
+          "place:poi:3550de7d25b8988d",
+          "place:poi:7eb37db1e2e4a9c7",
+          "place:poi:2bc352b51a46fc14"
+        ],
+        "mustBlank": false,
+        "topK": 500,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "matched",
+        "total": 5,
+        "top": [
+          {
+            "id": "place:poi:7eb37db1e2e4a9c7",
+            "name": "วัดประกาย",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:9b34ffcff211dbb7",
+            "name": "วัดป่ารัง",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:01407f688cbba198",
+            "name": "วัดเสาหิน",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:2bc352b51a46fc14",
+            "name": "วัดหนองบัว",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:3550de7d25b8988d",
+            "name": "วัดป่ามะม่วง",
+            "kind": "category"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P21",
+      "scope": "new_poi",
+      "query": "วัดร้าง จ.สุโขทัย",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "category",
+        "acceptableIds": [
+          "place:poi:450e774a3c6af1b8",
+          "place:poi:dcb8742da832b230",
+          "place:poi:0a28882d4a1c5096",
+          "place:poi:8528a22bcf5b52e3",
+          "place:poi:92830c8078691d41",
+          "place:poi:fefec648f68a8ff7",
+          "place:poi:d98c1d0d8bc9bdfd",
+          "place:poi:b8a680c6904dcfe8",
+          "place:poi:f2ed48531f0225a8",
+          "place:poi:ccb8cfe40e44801e",
+          "place:poi:0edebcbdbbe0c148",
+          "place:poi:1dbd3c21e4a8be13"
+        ],
+        "requiredIds": [
+          "place:poi:450e774a3c6af1b8",
+          "place:poi:dcb8742da832b230",
+          "place:poi:0a28882d4a1c5096",
+          "place:poi:8528a22bcf5b52e3",
+          "place:poi:92830c8078691d41",
+          "place:poi:fefec648f68a8ff7",
+          "place:poi:d98c1d0d8bc9bdfd",
+          "place:poi:b8a680c6904dcfe8",
+          "place:poi:f2ed48531f0225a8",
+          "place:poi:ccb8cfe40e44801e",
+          "place:poi:0edebcbdbbe0c148",
+          "place:poi:1dbd3c21e4a8be13"
+        ],
+        "mustBlank": false,
+        "topK": 500,
+        "requiredWarnings": []
+      },
+      "actual": {
+        "status": "matched",
+        "total": 12,
+        "top": [
+          {
+            "id": "place:poi:d98c1d0d8bc9bdfd",
+            "name": "วัดตาล (ร้าง)",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:8528a22bcf5b52e3",
+            "name": "วัดพร้าว (ร้าง)",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:fefec648f68a8ff7",
+            "name": "วัดสระเอน (ร้าง)",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:0a28882d4a1c5096",
+            "name": "วัดท่าช้าง (ร้าง)",
+            "kind": "category"
+          },
+          {
+            "id": "place:poi:ccb8cfe40e44801e",
+            "name": "วัดสลักงาม (ร้าง)",
+            "kind": "category"
+          }
+        ],
+        "warnings": []
+      },
+      "pass": true,
+      "firstAcceptedRank": 1,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P22",
+      "scope": "new_poi",
+      "query": "มัสยิด เชียงใหม่",
+      "options": {
+        "mode": "all",
+        "religion": "buddhist"
+      },
+      "expected": {
+        "outcome": "abstention",
+        "acceptableIds": [],
+        "requiredIds": [],
+        "mustBlank": true,
+        "topK": null,
+        "requiredWarnings": [
+          "conflicting_religion_filters"
+        ]
+      },
+      "actual": {
+        "status": "no_scope_match",
+        "total": 0,
+        "top": [],
+        "warnings": [
+          "conflicting_religion_filters"
+        ]
+      },
+      "pass": true,
+      "firstAcceptedRank": null,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P23",
+      "scope": "new_poi",
+      "query": "มัสยิด จ.เชียงใหม",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "abstention",
+        "acceptableIds": [],
+        "requiredIds": [],
+        "mustBlank": true,
+        "topK": null,
+        "requiredWarnings": [
+          "explicit_scope_not_found"
+        ]
+      },
+      "actual": {
+        "status": "no_scope_match",
+        "total": 0,
+        "top": [],
+        "warnings": [
+          "explicit_scope_not_found"
+        ]
+      },
+      "pass": true,
+      "firstAcceptedRank": null,
+      "capturedLiveArea": null
+    },
+    {
+      "caseId": "P24",
+      "scope": "new_poi",
+      "query": "วัดแจ้ง จ.สงขลา จ.สุรินทร์",
+      "options": {
+        "mode": "all"
+      },
+      "expected": {
+        "outcome": "abstention",
+        "acceptableIds": [],
+        "requiredIds": [],
+        "mustBlank": true,
+        "topK": null,
+        "requiredWarnings": [
+          "conflicting_explicit_scopes"
+        ]
+      },
+      "actual": {
+        "status": "no_scope_match",
+        "total": 0,
+        "top": [],
+        "warnings": [
+          "conflicting_explicit_scopes"
+        ]
+      },
+      "pass": true,
+      "firstAcceptedRank": null,
+      "capturedLiveArea": null
+    }
+  ]
+}

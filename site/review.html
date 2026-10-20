@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ทบทวนแนวทาง fuzzy search ของ Claude พร้อมขอบเขตข้อมูล ผลทดสอบ และวงจรปรับปรุงการค้นหาของ CityMETER">
+  <meta name="robots" content="noindex, nofollow"><meta name="color-scheme" content="light dark">
+  <title>ผล review การค้นหา · CityMETER Search Lab</title>
+  <link rel="icon" sizes="32x32" href="assets/lds/build-kit/icons/icon-portfolio-32.png">
+  <link rel="stylesheet" href="assets/lds/build-kit/lds-0.9.7.css"><link rel="stylesheet" href="styles.css">
+  <script>try{let t=localStorage.getItem('fuzzy-theme')||'dark';document.documentElement.dataset.theme=t==='auto'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t}catch{}</script>
+</head>
+<body>
+<a class="skip-link" href="#review-title">ไปที่ผล review</a>
+<header class="app-header">
+  <a class="brand" href="https://landometer.com/" aria-label="Landometer">Landometer</a>
+  <div class="product-name">CityMETER <span>/ Search Lab</span></div>
+  <nav class="desktop-nav" aria-label="เมนูเดโม"><a href="index.html">ทดลองค้นหา</a><a href="admin.html">ดูแลผลค้นหา</a><a href="https://github.com/montri-th/fuzzy" target="_blank" rel="noopener">ดูโค้ด</a></nav>
+  <details class="menu"><summary aria-label="ตั้งค่าและเมนู"><span class="icon" aria-hidden="true">menu</span></summary><div class="menu-content"><a href="index.html">ทดลองค้นหา</a><a href="admin.html">ดูแลผลค้นหา</a><a href="https://github.com/montri-th/fuzzy" target="_blank" rel="noopener">ดูโค้ดบน GitHub</a><label for="theme">ธีม</label><select id="theme"><option value="dark">มืด</option><option value="light">สว่าง</option><option value="auto">ตามเครื่อง</option></select></div></details>
+</header>
+<main class="review-page">
+  <a class="back-link" href="index.html">กลับไปทดลองค้นหา</a>
+  <p class="review-badge">ทบทวน 21 ตุลาคม 2026 · LDS 0.9.7 · เดโมแยกจาก CityMETER ปัจจุบัน</p>
+  <h1 id="review-title">ฐานของ Claude ใช้ต่อได้<br>เติมความเข้าใจข้อมูลที่กำลังเปิด</h1>
+  <p>แนวทางเดิมแก้ปัญหาการค้นชื่อพื้นที่ได้ตรงจุด: ชื่อตรงมาก่อน ใช้ชื่อเรียกอื่นที่ตรวจแล้ว แสดงชื่อใกล้เคียงให้เลือก และรักษาอำเภอ–จังหวัดของผลค้นหา เดโมนี้นำหลักนั้นมาทดลอง พร้อมเพิ่มการค้นชื่อศาสนสถานและประเภทข้อมูลในชุด Place of Worship</p>
+  <div class="review-note"><strong>สิ่งที่ทดลองได้ตอนนี้</strong><p>พิมพ์ “เชียงหใม่”, “จ.เชียงใหม่”, “๑๐”, “วัดอรุน” หรือ “มัสยิด เชียงใหม่” แล้วดูเหตุผลที่จับคู่และบริบทของแต่ละผล ชื่อซ้ำหรือชื่อที่เดาไม่ถูกเลือกให้อัตโนมัติ</p></div>
+
+  <h2>ควรปรับข้อเสนอเดิมตรงไหน</h2>
+  <p>เอกสาร Claude ศึกษา <strong>ช่องค้นพื้นที่</strong> 5 ประเภท ไม่รวมชื่อวัด มัสยิด โบสถ์ หรือการค้น dataset การนำ logic เดียวกันไปใช้ทั้ง ecosystem จึงต้องแยกชนิดผลและการกระทำให้ชัด: ไปยังพื้นที่ เปิดสถานที่ หรือกรองข้อมูลตามประเภท</p>
+  <ul>
+    <li><strong>ชื่อคล้ายไม่ใช่แห่งเดียวกัน</strong> เก็บชื่อจริงและ ID ต้นทางแยกจาก key ที่ลดวรรณยุกต์หรือรวมคู่เสียง ชื่อจริงตรงต้องมาก่อน และชื่อซ้ำต้องเห็นพื้นที่กำกับ</li>
+    <li><strong>พื้นที่ที่ระบุต้องมีผลจริง</strong> “วัดแจ้ง จ.สงขลา” ต้องไม่หลุดไปจังหวัดอื่น ถ้า parent ขัดกันหรือยังระบุไม่ได้ ให้บอกข้อจำกัด</li>
+    <li><strong>ค้น field ที่มี</strong> “มัสยิด เชียงใหม่” ใช้ศาสนาจาก source และจังหวัดของสถานที่ “วัดร้าง” ใช้สถานะข้อมูล ไม่อนุมานความเชื่อของคนหรือเวลาเปิดจากชื่อ</li>
+    <li><strong>ชื่อยาวต้องค้นช่วงที่จำได้</strong> ใช้ชื่อเต็ม ช่วงข้อความ และชื่อเรียกอื่นที่มีหลักฐาน คำสามัญอย่าง “วัด” ไม่ควรทำให้การเดากว้างขึ้นโดยไม่จำเป็น</li>
+    <li><strong>ยอมรับว่าไม่รู้</strong> คำว่า “โบสถ์” มีหลายความหมาย ต้องอธิบายความหมายที่รองรับ และแยกไม่พบในข้อมูลออกจากระบบผิดพลาด</li>
+  </ul>
+
+  <h2 id="data">ข้อมูลที่ค้นได้ในเดโม</h2>
+  <div class="table-scroll"><table><caption>Snapshot จาก public API วันที่ 21 ต.ค. 2026</caption><thead><tr><th scope="col">ชุดข้อมูล</th><th scope="col">จำนวน</th><th scope="col">ขอบเขต</th></tr></thead><tbody>
+    <tr><th scope="row">พื้นที่</th><td>17,062 รายการ</td><td>จังหวัด อำเภอ/เขต ตำบล/แขวง อปท. และย่าน จาก corpus ของ CityMETER</td></tr>
+    <tr><th scope="row">ศาสนสถานที่ค้นชื่อได้</th><td>1,491 รายการ</td><td>126 ตำบลที่เลือกจาก 77 จังหวัด เป็นตัวอย่างแบบเจาะจง ไม่ใช่ตัวอย่างแทนประเทศ</td></tr>
+    <tr><th scope="row">ยอดใน source ระดับประเทศ</th><td>51,901 รายการ</td><td>มีพิกัด 38,842 และระบุได้เพียงพื้นที่ 13,059 รายการ เดโมไม่ได้โหลดชื่อครบจำนวนนี้</td></tr>
+  </tbody></table></div>
+  <p>พิกัดศาสนสถานใช้ค่าจาก source ส่วนตำแหน่งพื้นที่บนแผนที่เป็นจุดกลางกรอบ extent เพื่อแสดงผล ไม่ใช่ทางเข้า ที่อยู่ หรือหลักฐานขอบเขตทางกฎหมาย <strong>ไม่พบในเดโมไม่ได้แปลว่าไม่มีศาสนสถานนั้นจริง</strong> เดโมไม่ใช้ Locale Insight อนุมานประชากร ศาสนา พฤติกรรม หรือความเสี่ยง</p>
+  <p><a href="data/source-audit.json">อ่านรายการแหล่งข้อมูลและข้อจำกัด</a></p>
+
+  <h2 id="comparison">เปรียบเทียบกับของเดิมอย่างไร</h2>
+  <p>มีผลตอบจริงจาก API ค้นพื้นที่เดิมเก็บไว้ <strong>15 คำตัวอย่าง</strong> คำอื่นแสดงการจำลองวิธีเดิมบน snapshot และติดป้ายว่าเป็นการจำลองเสมอ การเพิ่มชื่อศาสนสถานเป็น scope ใหม่ จึงแยกจากการปรับความทนต่อคำผิดของช่องพื้นที่เดิม</p>
+  <p>ใน 9 คำที่เลือกไว้และมี ID พื้นที่เป้าหมาย API เดิมเข้าถึง ID ตาม cutoff ของ case ได้ 2/9 ส่วนเดโมได้ 9/9 เป็นผลเฉพาะตัวอย่างเหล่านี้ ซึ่งเปิดให้ผู้พัฒนาเห็นระหว่างแก้ไขแล้ว ไม่ใช่อัตราความสำเร็จของผู้ใช้ทั้งหมด</p>
+  <div class="table-scroll"><table class="score-table"><caption>มี ID เป้าหมายใน top-k ที่กำหนดไว้ล่วงหน้า</caption><thead><tr><th scope="col">คำค้น</th><th scope="col">API เดิมที่เก็บไว้</th><th scope="col">เดโมใหม่</th></tr></thead><tbody>
+    <tr><th scope="row">เชียงใหม่</th><td>พบ อันดับ 1</td><td>พบ อันดับ 1</td></tr>
+    <tr><th scope="row">เชียงหใม่</th><td>ไม่พบ</td><td>พบ อันดับ 1</td></tr>
+    <tr><th scope="row">เชียงใหม</th><td>พบ อันดับ 1</td><td>พบ อันดับ 1</td></tr>
+    <tr><th scope="row">ขอนเเก่น</th><td>ไม่พบ</td><td>พบ อันดับ 1</td></tr>
+    <tr><th scope="row">จ.เชียงใหม่</th><td>ไม่พบ</td><td>พบ อันดับ 1</td></tr>
+    <tr><th scope="row">10</th><td>ไม่พบ</td><td>พบ อันดับ 1</td></tr>
+    <tr><th scope="row"><code>g=up'.s,j</code></th><td>ไม่พบ</td><td>พบ อันดับ 1</td></tr>
+    <tr><th scope="row">หาดใหญ่ สงขลา</th><td>ไม่พบ</td><td>พบ อันดับ 1</td></tr>
+    <tr><th scope="row">ลอง</th><td>ID อำเภอเป้าหมายไม่อยู่ในผล</td><td>พบ อันดับ 1</td></tr>
+  </tbody></table></div>
+  <p>ไม่ได้เปรียบเทียบความเร็วระหว่างการค้นในเครื่องกับ network ของ production และไม่ย้ายคะแนน 98.7% จากการทดลองสังเคราะห์ของ Claude มาเป็นคะแนนเดโมหรือข้อมูลศาสนสถาน</p>
+
+  <h2 id="evaluation">ตรวจอะไรแล้วบ้าง</h2>
+  <p>ชุดตัวอย่างที่กำหนด ID และผลที่ควรว่างไว้ก่อนรอบแก้ ผ่านครบ <strong>พื้นที่ 16/16</strong> และ <strong>ศาสนสถาน/ประเภทข้อมูล 24/24</strong> แยก retrieval, ชื่อกำกวม, หมวดข้อมูล และการไม่เดาคำตอบ ตรวจชื่อจริงของ POI เพิ่มครบ 1,491 รายการ ทุกชื่อเข้าถึง ID ของตนเองได้ภายในผล 500 รายการ</p>
+  <p>ผู้ตรวจแยกจากผู้เขียน engine พบ 3 จุดแล้วแก้และรัน labels เดิมซ้ำ: คำ “วัด อิสลาม” เดาผิดเป็นวัดอิสาน, “วัดราษฎร์” ไม่อ่าน field ประเภทวัด และ regression ที่ “วัดอรุน” ค้นไม่พบหลังจำกัดคำสามัญ ผลนี้เป็นการตรวจโดย AI ยังไม่มี human label review หรือชุด holdout และยังไม่ใช่การทดสอบ database, load หรือ production readiness</p>
+  <p><a href="data/evaluation-public.json">ดาวน์โหลดผลราย case พร้อม expected ID และผลที่พบ</a> · <a href="https://github.com/montri-th/fuzzy" target="_blank" rel="noopener">ดูโค้ดและชุด regression</a></p>
+
+  <h2 id="feedback">จากคำบ่นสู่การค้นหาที่ดีขึ้น</h2>
+  <ol>
+    <li><strong>เห็นสัญญาณ</strong> สถิติแอปเก็บโหมด จำนวนผล สถานะ และเวลา ไม่เก็บข้อความคำค้นทุกครั้ง ข้อความคำค้นและคำอธิบายส่งเก็บเมื่อผู้ใช้กดแจ้งปัญหา</li>
+    <li><strong>คนตรวจ</strong> ผู้ดูแลเปิดคำแจ้งในหน้าที่ต้องยืนยันสิทธิ์ ตรวจข้อมูลที่มี ระบุสาเหตุ ยืนยัน ID ที่ตั้งใจหา หรือยืนยันว่าควรไม่พบ พร้อมตรวจข้อมูลส่วนบุคคล</li>
+    <li><strong>AI ช่วยแก้</strong> นำเฉพาะ case ที่คนยืนยันและผ่าน privacy review มาใช้ในไฟล์ส่วนตัว ให้ AI เสนอแก้ normalizer, alias, parser หรือ ranking พร้อมหลักฐาน</li>
+    <li><strong>รักษากรณีเดิม</strong> รัน regression เดิมและ case ใหม่ การลบ case หรือเปลี่ยนคำตอบเดิมต้องถูกตรวจ ส่วนการแก้ label ต้องมีการอนุมัติของคนแยกต่างหาก</li>
+    <li><strong>คนอนุมัติการปล่อย</strong> review การเปลี่ยนแปลงก่อนเผยแพร่ แล้วตรวจคำที่เคยมีปัญหาซ้ำ การรับคำบ่นไม่ได้สั่งให้ AI เรียนรู้หรือเผยแพร่อัตโนมัติ</li>
+  </ol>
+  <p>คำแจ้งอาจมีข้อมูลส่วนตัว จึงจำกัดการเข้าถึงและไม่เผยแพร่ลง repository หรือรายงานนี้ การไม่บันทึก raw query ในสถิติแอปไม่ได้หมายความว่า provider ไม่มี transport/access log; ผู้ดูแลต้องตรวจการตั้งค่าและอายุเก็บของผู้ให้บริการตามการติดตั้งจริง</p>
+  <p><a href="admin.html">เปิดหน้าดูแลสถิติและคำแจ้ง</a></p>
+
+  <h2>นำไปใช้ทั้ง ecosystem</h2>
+  <p>ใช้แกนร่วมสำหรับการจัดรูปภาษาไทย การส่ง ID/เงื่อนไขพื้นที่ ชื่อเรียกอื่น เหตุผลการจับคู่ และผล resolved / ambiguous / unresolved จากนั้นแยก adapter ต่อผลิตภัณฑ์: CityMETER พื้นที่และสถานที่, catalogue dataset, บทความ CityWiki และเอกสารภายใน แต่ละ adapter มี corpus, field, สิทธิ์เข้าถึง และ action ของตนเอง คะแนน similarity ข้าม corpus ไม่ใช่ความมั่นใจที่เปรียบเทียบกันได้โดยตรง</p>
+  <p>สำหรับ server จริง PostgreSQL เดิมเป็นจุดเริ่มที่น่าทดสอบ แต่ต้องวัด recall หลัง candidate cap, identity/parent ที่ผิด และเวลาภายใต้ load จริงก่อนเลือก index หรือขยาย search engine</p>
+
+  <h2>หลักฐานมาตรฐานที่ใช้ทบทวน</h2>
+  <ul>
+    <li><a href="https://www.postgresql.org/docs/16/fuzzystrmatch.html">PostgreSQL fuzzystrmatch</a> — Levenshtein รองรับ multibyte และจำกัด input 255 characters ต้องคุมความยาวและ edit budget</li>
+    <li><a href="https://www.postgresql.org/docs/16/pgtrgm.html">PostgreSQL pg_trgm</a> — แยก GIN filtering กับ GiST distance top-k; มี trigram ไม่ได้พิสูจน์ recall ของภาษาไทย</li>
+    <li><a href="https://www.postgresql.org/docs/18/release-18.html">PostgreSQL 18 release notes</a> — ข้อควรตรวจ provider และ reindex หลัง upgrade ในกรณีที่เกี่ยวข้อง</li>
+    <li><a href="https://unicode.org/reports/tr15/">Unicode normalization</a> — แยก canonical normalization จากการผ่อนคลายการสะกด; ห้ามเขียนทับชื่อจริง</li>
+    <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/">WAI-ARIA combobox</a> — รูปแบบ keyboard, focus และการยืนยันผลที่ผู้ใช้เลือก</li>
+  </ul>
+  <p class="review-badge">เอกสารแนบของ Claude เป็น input สำหรับทบทวน ไม่ใช่คำสั่งให้ deploy หรือเปิดระบบเก็บข้อมูลโดยอัตโนมัติ · รายงานสาธารณะนี้ไม่มีข้อมูลคำบ่นของผู้ใช้</p>
+</main>
+<script>const select=document.querySelector('#theme');try{select.value=localStorage.getItem('fuzzy-theme')||'dark'}catch{}select.addEventListener('change',()=>{const t=select.value;try{localStorage.setItem('fuzzy-theme',t)}catch{}document.documentElement.dataset.theme=t==='auto'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t});</script>
+</body>
+</html>

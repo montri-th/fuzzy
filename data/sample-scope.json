@@ -1,0 +1,3033 @@
+[
+  {
+    "id": "d9ff9e00-2211-4dc8-ac0a-0fa45db2ef6f",
+    "name": "ไกรใน",
+    "parents": [
+      {
+        "id": "68b32b1f-bca3-4620-8892-c728c2139308",
+        "type": "DISTRICT",
+        "name": "กงไกรลาศ",
+        "nameEn": null
+      },
+      {
+        "id": "9f5f73a6-a495-4306-b486-3eead6b83ab5",
+        "type": "PROVINCE",
+        "name": "สุโขทัย",
+        "nameEn": "Sukhothai"
+      }
+    ],
+    "pointCount": 17,
+    "totalCount": 20,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=d9ff9e00-2211-4dc8-ac0a-0fa45db2ef6f"
+  },
+  {
+    "id": "f688f646-8d15-4fcc-8e5d-1a86946959e7",
+    "name": "ท่าราบ",
+    "parents": [
+      {
+        "id": "558a53c5-e743-4276-b98e-ecee6db463bc",
+        "type": "DISTRICT",
+        "name": "เมืองเพชรบุรี",
+        "nameEn": null
+      },
+      {
+        "id": "09ac5850-c073-4787-9e1d-e68712b9cd95",
+        "type": "PROVINCE",
+        "name": "เพชรบุรี",
+        "nameEn": "Phetchaburi"
+      }
+    ],
+    "pointCount": 15,
+    "totalCount": 17,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=f688f646-8d15-4fcc-8e5d-1a86946959e7"
+  },
+  {
+    "id": "2781109c-dcba-4f9b-a7c4-251cc672d525",
+    "name": "สวนหลวง",
+    "parents": [
+      {
+        "id": "2e626709-674c-4dbf-83d3-5cdfa0e4be98",
+        "type": "DISTRICT",
+        "name": "สวนหลวง",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 20,
+    "totalCount": 25,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=2781109c-dcba-4f9b-a7c4-251cc672d525"
+  },
+  {
+    "id": "aa3136fc-995e-48fd-9b07-59741e0fe769",
+    "name": "คลองเตยเหนือ",
+    "parents": [
+      {
+        "id": "4d2c9298-6f1a-4985-ab53-2fd481cc43b0",
+        "type": "DISTRICT",
+        "name": "วัฒนา",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 1,
+    "totalCount": 3,
+    "reasons": [
+      "source Sikh count positive"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=aa3136fc-995e-48fd-9b07-59741e0fe769"
+  },
+  {
+    "id": "196033a7-42e6-498a-be78-4f19870bd386",
+    "name": "วังบูรพาภิรมย์",
+    "parents": [
+      {
+        "id": "407640bd-869f-4893-a759-b25c2d5538a5",
+        "type": "DISTRICT",
+        "name": "พระนคร",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 2,
+    "totalCount": 3,
+    "reasons": [
+      "source Sikh count positive",
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=196033a7-42e6-498a-be78-4f19870bd386"
+  },
+  {
+    "id": "f1bf94d2-5b25-4a65-9e66-6b53656e9cc6",
+    "name": "บางรัก",
+    "parents": [
+      {
+        "id": "8fc70f2c-b096-45d2-baf9-eb1863f870dc",
+        "type": "DISTRICT",
+        "name": "บางรัก",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 4,
+    "totalCount": 5,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=f1bf94d2-5b25-4a65-9e66-6b53656e9cc6"
+  },
+  {
+    "id": "ee943966-4e0f-43b4-a55b-37c6302ae8e1",
+    "name": "พระบรมมหาราชวัง",
+    "parents": [
+      {
+        "id": "407640bd-869f-4893-a759-b25c2d5538a5",
+        "type": "DISTRICT",
+        "name": "พระนคร",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 3,
+    "totalCount": 3,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=ee943966-4e0f-43b4-a55b-37c6302ae8e1"
+  },
+  {
+    "id": "fba6cf15-a78b-4f62-8400-6aa9d37860a1",
+    "name": "วัดกัลยาณ์",
+    "parents": [
+      {
+        "id": "44d12853-9948-480d-a623-149a0ad5ebd4",
+        "type": "DISTRICT",
+        "name": "ธนบุรี",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 5,
+    "totalCount": 7,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=fba6cf15-a78b-4f62-8400-6aa9d37860a1"
+  },
+  {
+    "id": "35c70bc0-78a7-49fc-b6fe-c8175415102f",
+    "name": "มหาพฤฒาราม",
+    "parents": [
+      {
+        "id": "8fc70f2c-b096-45d2-baf9-eb1863f870dc",
+        "type": "DISTRICT",
+        "name": "บางรัก",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 4,
+    "totalCount": 5,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=35c70bc0-78a7-49fc-b6fe-c8175415102f"
+  },
+  {
+    "id": "3ea6f644-be66-4853-9465-9e143f198f9e",
+    "name": "วัดท่าพระ",
+    "parents": [
+      {
+        "id": "07f12322-7fe8-414f-ad02-5b2d5fa5209a",
+        "type": "DISTRICT",
+        "name": "บางกอกใหญ่",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 5,
+    "totalCount": 7,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=3ea6f644-be66-4853-9465-9e143f198f9e"
+  },
+  {
+    "id": "5eccdf3b-cf81-41e4-8a3e-ebaeae9b704c",
+    "name": "บวรนิเวศ",
+    "parents": [
+      {
+        "id": "407640bd-869f-4893-a759-b25c2d5538a5",
+        "type": "DISTRICT",
+        "name": "พระนคร",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 3,
+    "totalCount": 3,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=5eccdf3b-cf81-41e4-8a3e-ebaeae9b704c"
+  },
+  {
+    "id": "b5d17499-6ce5-41d4-9e13-4b7c92ad03a1",
+    "name": "ตลาดน้อย",
+    "parents": [
+      {
+        "id": "8a7fed08-d58f-4762-b8e5-35e191476664",
+        "type": "DISTRICT",
+        "name": "สัมพันธวงศ์",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 2,
+    "totalCount": 3,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=b5d17499-6ce5-41d4-9e13-4b7c92ad03a1"
+  },
+  {
+    "id": "2ac3d159-1567-4644-ae40-a6812ddd5168",
+    "name": "ตลาดพลู",
+    "parents": [
+      {
+        "id": "44d12853-9948-480d-a623-149a0ad5ebd4",
+        "type": "DISTRICT",
+        "name": "ธนบุรี",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 6,
+    "totalCount": 6,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=2ac3d159-1567-4644-ae40-a6812ddd5168"
+  },
+  {
+    "id": "5936289f-c8c1-4edd-81e7-2502ad730b54",
+    "name": "บ้านพานถม",
+    "parents": [
+      {
+        "id": "407640bd-869f-4893-a759-b25c2d5538a5",
+        "type": "DISTRICT",
+        "name": "พระนคร",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 4,
+    "totalCount": 4,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=5936289f-c8c1-4edd-81e7-2502ad730b54"
+  },
+  {
+    "id": "40087192-5bd0-41ea-a9da-cdc68d4f1b0d",
+    "name": "จักรวรรดิ",
+    "parents": [
+      {
+        "id": "8a7fed08-d58f-4762-b8e5-35e191476664",
+        "type": "DISTRICT",
+        "name": "สัมพันธวงศ์",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 4,
+    "totalCount": 4,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=40087192-5bd0-41ea-a9da-cdc68d4f1b0d"
+  },
+  {
+    "id": "435dea09-b9d8-4abe-9722-1d5541a5128a",
+    "name": "สี่พระยา",
+    "parents": [
+      {
+        "id": "8fc70f2c-b096-45d2-baf9-eb1863f870dc",
+        "type": "DISTRICT",
+        "name": "บางรัก",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 2,
+    "totalCount": 4,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=435dea09-b9d8-4abe-9722-1d5541a5128a"
+  },
+  {
+    "id": "6fa4b594-4686-416e-9367-fea62ea8ed54",
+    "name": "บางยี่เรือ",
+    "parents": [
+      {
+        "id": "44d12853-9948-480d-a623-149a0ad5ebd4",
+        "type": "DISTRICT",
+        "name": "ธนบุรี",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 6,
+    "totalCount": 7,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=6fa4b594-4686-416e-9367-fea62ea8ed54"
+  },
+  {
+    "id": "b552990f-6530-46bf-b966-d01dea3703b1",
+    "name": "สีลม",
+    "parents": [
+      {
+        "id": "8fc70f2c-b096-45d2-baf9-eb1863f870dc",
+        "type": "DISTRICT",
+        "name": "บางรัก",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 3,
+    "totalCount": 9,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=b552990f-6530-46bf-b966-d01dea3703b1"
+  },
+  {
+    "id": "c4f3d22a-4fe5-4e86-8031-28e808435efb",
+    "name": "หิรัญรูจี",
+    "parents": [
+      {
+        "id": "44d12853-9948-480d-a623-149a0ad5ebd4",
+        "type": "DISTRICT",
+        "name": "ธนบุรี",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 6,
+    "totalCount": 6,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=c4f3d22a-4fe5-4e86-8031-28e808435efb"
+  },
+  {
+    "id": "a0523e49-8934-4a9c-9a7d-583d54382296",
+    "name": "เสาชิงช้า",
+    "parents": [
+      {
+        "id": "407640bd-869f-4893-a759-b25c2d5538a5",
+        "type": "DISTRICT",
+        "name": "พระนคร",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 1,
+    "totalCount": 1,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=a0523e49-8934-4a9c-9a7d-583d54382296"
+  },
+  {
+    "id": "2941e37c-caee-4353-a5f6-5c7fc54fbbde",
+    "name": "วัดอรุณ",
+    "parents": [
+      {
+        "id": "07f12322-7fe8-414f-ad02-5b2d5fa5209a",
+        "type": "DISTRICT",
+        "name": "บางกอกใหญ่",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 9,
+    "totalCount": 9,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=2941e37c-caee-4353-a5f6-5c7fc54fbbde"
+  },
+  {
+    "id": "8b5bbf7c-1146-4387-8de3-dbfd57795f33",
+    "name": "วัดสามพระยา",
+    "parents": [
+      {
+        "id": "407640bd-869f-4893-a759-b25c2d5538a5",
+        "type": "DISTRICT",
+        "name": "พระนคร",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 3,
+    "totalCount": 3,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=8b5bbf7c-1146-4387-8de3-dbfd57795f33"
+  },
+  {
+    "id": "7289cea3-b77c-43f7-9b0b-9f7147af5e68",
+    "name": "วัดราชบพิธ",
+    "parents": [
+      {
+        "id": "407640bd-869f-4893-a759-b25c2d5538a5",
+        "type": "DISTRICT",
+        "name": "พระนคร",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 2,
+    "totalCount": 2,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=7289cea3-b77c-43f7-9b0b-9f7147af5e68"
+  },
+  {
+    "id": "2bf19974-ce8f-42fa-a678-577c3209a26a",
+    "name": "ชนะสงคราม",
+    "parents": [
+      {
+        "id": "407640bd-869f-4893-a759-b25c2d5538a5",
+        "type": "DISTRICT",
+        "name": "พระนคร",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 2,
+    "totalCount": 2,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=2bf19974-ce8f-42fa-a678-577c3209a26a"
+  },
+  {
+    "id": "8635a6f7-7082-4103-8fc7-2926ea42c684",
+    "name": "บางขุนพรหม",
+    "parents": [
+      {
+        "id": "407640bd-869f-4893-a759-b25c2d5538a5",
+        "type": "DISTRICT",
+        "name": "พระนคร",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 3,
+    "totalCount": 3,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=8635a6f7-7082-4103-8fc7-2926ea42c684"
+  },
+  {
+    "id": "4561def7-a81b-4272-aaba-75cca5e93890",
+    "name": "สำราญราษฎร์",
+    "parents": [
+      {
+        "id": "407640bd-869f-4893-a759-b25c2d5538a5",
+        "type": "DISTRICT",
+        "name": "พระนคร",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 1,
+    "totalCount": 1,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=4561def7-a81b-4272-aaba-75cca5e93890"
+  },
+  {
+    "id": "2a630dd1-3d3d-4af6-b319-69acc53cb6db",
+    "name": "สัมพันธวงศ์",
+    "parents": [
+      {
+        "id": "8a7fed08-d58f-4762-b8e5-35e191476664",
+        "type": "DISTRICT",
+        "name": "สัมพันธวงศ์",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 7,
+    "totalCount": 7,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=2a630dd1-3d3d-4af6-b319-69acc53cb6db"
+  },
+  {
+    "id": "88689de3-165a-40b3-939a-6b9e564f4957",
+    "name": "บุคคโล",
+    "parents": [
+      {
+        "id": "44d12853-9948-480d-a623-149a0ad5ebd4",
+        "type": "DISTRICT",
+        "name": "ธนบุรี",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 9,
+    "totalCount": 9,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=88689de3-165a-40b3-939a-6b9e564f4957"
+  },
+  {
+    "id": "4811b86a-bc96-4d8c-b262-96957d310cdc",
+    "name": "ศาลเจ้าพ่อเสือ",
+    "parents": [
+      {
+        "id": "407640bd-869f-4893-a759-b25c2d5538a5",
+        "type": "DISTRICT",
+        "name": "พระนคร",
+        "nameEn": null
+      },
+      {
+        "id": "a29ec31e-3a36-4ab7-9670-7cef38873c80",
+        "type": "PROVINCE",
+        "name": "กรุงเทพมหานคร",
+        "nameEn": "Bangkok"
+      }
+    ],
+    "pointCount": 1,
+    "totalCount": 1,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=4811b86a-bc96-4d8c-b262-96957d310cdc"
+  },
+  {
+    "id": "2f249049-a204-4d02-8563-a9824b9e2d6b",
+    "name": "ในเมือง",
+    "parents": [
+      {
+        "id": "efe36f2d-1015-4aa2-bdae-fc5e0993b452",
+        "type": "DISTRICT",
+        "name": "เมืองนครศรีธรรมราช",
+        "nameEn": null
+      },
+      {
+        "id": "92cd4502-dcb8-48e5-983c-915ac3e4f0b2",
+        "type": "PROVINCE",
+        "name": "นครศรีธรรมราช",
+        "nameEn": "Nakhon Si Thammarat"
+      }
+    ],
+    "pointCount": 21,
+    "totalCount": 22,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=2f249049-a204-4d02-8563-a9824b9e2d6b"
+  },
+  {
+    "id": "00069fe6-420b-4962-885b-a0b875628aec",
+    "name": "ยางตลาด",
+    "parents": [
+      {
+        "id": "efae6d85-62db-45ff-b996-c28a713e8814",
+        "type": "DISTRICT",
+        "name": "ยางตลาด",
+        "nameEn": null
+      },
+      {
+        "id": "8d8a3dae-4a90-4429-9f43-ceabda85e127",
+        "type": "PROVINCE",
+        "name": "กาฬสินธุ์",
+        "nameEn": "Kalasin"
+      }
+    ],
+    "pointCount": 14,
+    "totalCount": 15,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=00069fe6-420b-4962-885b-a0b875628aec"
+  },
+  {
+    "id": "3d8dbeb7-ad68-47f6-8d46-cd47ba326fdd",
+    "name": "เขานิเวศน์",
+    "parents": [
+      {
+        "id": "d359221e-81b8-43a7-9161-a825130d5656",
+        "type": "DISTRICT",
+        "name": "เมืองระนอง",
+        "nameEn": null
+      },
+      {
+        "id": "8d9a6a2c-7885-449f-8734-9121bda74564",
+        "type": "PROVINCE",
+        "name": "ระนอง",
+        "nameEn": "Ranong"
+      }
+    ],
+    "pointCount": 4,
+    "totalCount": 5,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=3d8dbeb7-ad68-47f6-8d46-cd47ba326fdd"
+  },
+  {
+    "id": "27d2dcba-e3d3-47e4-964d-b2e9d811dbf5",
+    "name": "ป่าคลอก",
+    "parents": [
+      {
+        "id": "0c1cbdb2-1575-4bb7-9724-4322a1cfeccf",
+        "type": "DISTRICT",
+        "name": "ถลาง",
+        "nameEn": null
+      },
+      {
+        "id": "ac5bb10a-c904-4be7-8488-9d82968cfac3",
+        "type": "PROVINCE",
+        "name": "ภูเก็ต",
+        "nameEn": "Phuket"
+      }
+    ],
+    "pointCount": 11,
+    "totalCount": 21,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=27d2dcba-e3d3-47e4-964d-b2e9d811dbf5"
+  },
+  {
+    "id": "2ea344fd-ad84-484c-aa42-034bc8df7e56",
+    "name": "ตลาดใหญ่",
+    "parents": [
+      {
+        "id": "94343cee-3c13-4429-8dfa-3d7340c278f8",
+        "type": "DISTRICT",
+        "name": "เมืองภูเก็ต",
+        "nameEn": null
+      },
+      {
+        "id": "ac5bb10a-c904-4be7-8488-9d82968cfac3",
+        "type": "PROVINCE",
+        "name": "ภูเก็ต",
+        "nameEn": "Phuket"
+      }
+    ],
+    "pointCount": 6,
+    "totalCount": 9,
+    "reasons": [
+      "source Sikh count positive"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=2ea344fd-ad84-484c-aa42-034bc8df7e56"
+  },
+  {
+    "id": "7bc82757-369e-4a5e-9da9-324d473e99e4",
+    "name": "เชียงคาน",
+    "parents": [
+      {
+        "id": "2fd982a2-7e39-48cc-9b38-8d75de7bca8d",
+        "type": "DISTRICT",
+        "name": "เชียงคาน",
+        "nameEn": null
+      },
+      {
+        "id": "5c80ccc6-5f95-4fbd-83c3-226ba07cfb83",
+        "type": "PROVINCE",
+        "name": "เลย",
+        "nameEn": "Loei"
+      }
+    ],
+    "pointCount": 17,
+    "totalCount": 20,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=7bc82757-369e-4a5e-9da9-324d473e99e4"
+  },
+  {
+    "id": "c5010f97-ad1c-416c-82fc-698301752cec",
+    "name": "ลำพญากลาง",
+    "parents": [
+      {
+        "id": "66cc5204-97ed-4a22-a542-934c03505575",
+        "type": "DISTRICT",
+        "name": "มวกเหล็ก",
+        "nameEn": null
+      },
+      {
+        "id": "feab952a-f61b-4236-a19d-bd0bc64da5d7",
+        "type": "PROVINCE",
+        "name": "สระบุรี",
+        "nameEn": "Saraburi"
+      }
+    ],
+    "pointCount": 14,
+    "totalCount": 14,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=c5010f97-ad1c-416c-82fc-698301752cec"
+  },
+  {
+    "id": "6210bad8-3a9c-4eb2-a3ae-6fde113e3530",
+    "name": "ในเมือง",
+    "parents": [
+      {
+        "id": "708151b4-0959-498a-9a04-5bba96fa9c98",
+        "type": "DISTRICT",
+        "name": "เมืองพิษณุโลก",
+        "nameEn": null
+      },
+      {
+        "id": "dec6ef83-5e18-411a-b23c-87ef78e47e19",
+        "type": "PROVINCE",
+        "name": "พิษณุโลก",
+        "nameEn": "Phitsanulok"
+      }
+    ],
+    "pointCount": 14,
+    "totalCount": 17,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=6210bad8-3a9c-4eb2-a3ae-6fde113e3530"
+  },
+  {
+    "id": "4ece9abb-3227-4e3e-ba82-d6ad18030709",
+    "name": "หนองปรือ",
+    "parents": [
+      {
+        "id": "9b25ee61-2172-4122-87eb-22b77a1b2fce",
+        "type": "DISTRICT",
+        "name": "หนองปรือ",
+        "nameEn": null
+      },
+      {
+        "id": "62ed900c-11ca-4206-98c4-0aadfd619518",
+        "type": "PROVINCE",
+        "name": "กาญจนบุรี",
+        "nameEn": "Kanchanaburi"
+      }
+    ],
+    "pointCount": 21,
+    "totalCount": 22,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=4ece9abb-3227-4e3e-ba82-d6ad18030709"
+  },
+  {
+    "id": "86461f1a-96e0-4a2c-ba02-852a17954b5c",
+    "name": "ปงแสนทอง",
+    "parents": [
+      {
+        "id": "d9b8a322-20c4-4bb4-b233-b49e193ae1aa",
+        "type": "DISTRICT",
+        "name": "เมืองลำปาง",
+        "nameEn": null
+      },
+      {
+        "id": "1bc3f6b9-eded-40cc-a788-0991039c4a87",
+        "type": "PROVINCE",
+        "name": "ลำปาง",
+        "nameEn": "Lampang"
+      }
+    ],
+    "pointCount": 18,
+    "totalCount": 20,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=86461f1a-96e0-4a2c-ba02-852a17954b5c"
+  },
+  {
+    "id": "d32bfaa2-f669-4be7-a1b3-696825920dd4",
+    "name": "หัวเวียง",
+    "parents": [
+      {
+        "id": "d9b8a322-20c4-4bb4-b233-b49e193ae1aa",
+        "type": "DISTRICT",
+        "name": "เมืองลำปาง",
+        "nameEn": null
+      },
+      {
+        "id": "1bc3f6b9-eded-40cc-a788-0991039c4a87",
+        "type": "PROVINCE",
+        "name": "ลำปาง",
+        "nameEn": "Lampang"
+      }
+    ],
+    "pointCount": 10,
+    "totalCount": 12,
+    "reasons": [
+      "source Sikh count positive"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=d32bfaa2-f669-4be7-a1b3-696825920dd4"
+  },
+  {
+    "id": "7d726ca8-977e-4f77-bbc4-928cdcbaa6a6",
+    "name": "ตันหยงมัส",
+    "parents": [
+      {
+        "id": "9f464fe4-eb85-4d0e-8634-5ee5b48dd1ce",
+        "type": "DISTRICT",
+        "name": "ระแงะ",
+        "nameEn": null
+      },
+      {
+        "id": "0c8db10b-1e08-498b-8f9a-a017f2cea5c5",
+        "type": "PROVINCE",
+        "name": "นราธิวาส",
+        "nameEn": "Narathiwat"
+      }
+    ],
+    "pointCount": 15,
+    "totalCount": 18,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=7d726ca8-977e-4f77-bbc4-928cdcbaa6a6"
+  },
+  {
+    "id": "665489fa-e6c8-4961-b58c-8ec34b9888c3",
+    "name": "สะพลี",
+    "parents": [
+      {
+        "id": "89a5ebff-17e7-4ae2-8be4-76cb44f500d8",
+        "type": "DISTRICT",
+        "name": "ปะทิว",
+        "nameEn": null
+      },
+      {
+        "id": "9a8069c4-af4a-4aae-abcf-964d188b45f6",
+        "type": "PROVINCE",
+        "name": "ชุมพร",
+        "nameEn": "Chumphon"
+      }
+    ],
+    "pointCount": 7,
+    "totalCount": 7,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=665489fa-e6c8-4961-b58c-8ec34b9888c3"
+  },
+  {
+    "id": "9c81a121-1595-4797-89e0-6d43328e40f4",
+    "name": "เขาชัยสน",
+    "parents": [
+      {
+        "id": "c281c069-8c4c-40a4-8a0f-633bcc4bb6c4",
+        "type": "DISTRICT",
+        "name": "เขาชัยสน",
+        "nameEn": null
+      },
+      {
+        "id": "4cc601b2-e1b1-46d4-8670-62800c323301",
+        "type": "PROVINCE",
+        "name": "พัทลุง",
+        "nameEn": "Phatthalung"
+      }
+    ],
+    "pointCount": 12,
+    "totalCount": 14,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=9c81a121-1595-4797-89e0-6d43328e40f4"
+  },
+  {
+    "id": "3748dae9-37fc-4b45-bbe2-1b3a114a9fba",
+    "name": "บ้านนา",
+    "parents": [
+      {
+        "id": "8fcbbe03-ff29-4996-8569-67a7f47050fe",
+        "type": "DISTRICT",
+        "name": "ปะเหลียน",
+        "nameEn": null
+      },
+      {
+        "id": "69eecfa0-45c3-4c14-af23-f4d5fb38e1fb",
+        "type": "PROVINCE",
+        "name": "ตรัง",
+        "nameEn": "Trang"
+      }
+    ],
+    "pointCount": 9,
+    "totalCount": 17,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=3748dae9-37fc-4b45-bbe2-1b3a114a9fba"
+  },
+  {
+    "id": "32a27702-2247-4518-829e-e41f69e45a17",
+    "name": "ทุ่งลูกนก",
+    "parents": [
+      {
+        "id": "f6344343-d35b-461a-baab-2aaab94842de",
+        "type": "DISTRICT",
+        "name": "กำแพงแสน",
+        "nameEn": null
+      },
+      {
+        "id": "69c8b013-9f78-43d0-ac80-e98dad522ee0",
+        "type": "PROVINCE",
+        "name": "นครปฐม",
+        "nameEn": "Nakhon Pathom"
+      }
+    ],
+    "pointCount": 8,
+    "totalCount": 10,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=32a27702-2247-4518-829e-e41f69e45a17"
+  },
+  {
+    "id": "461f932a-cbf8-4786-ba80-be3c10071e04",
+    "name": "เวียง",
+    "parents": [
+      {
+        "id": "5e058b20-4c42-4f62-8ee4-35faf70c544d",
+        "type": "DISTRICT",
+        "name": "เชียงแสน",
+        "nameEn": null
+      },
+      {
+        "id": "ea7d538e-cea8-4cc9-892e-f859f609a1f4",
+        "type": "PROVINCE",
+        "name": "เชียงราย",
+        "nameEn": "Chiang Rai"
+      }
+    ],
+    "pointCount": 35,
+    "totalCount": 42,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=461f932a-cbf8-4786-ba80-be3c10071e04"
+  },
+  {
+    "id": "1d1210e4-74e3-470f-8521-0e92be297fce",
+    "name": "รอบเวียง",
+    "parents": [
+      {
+        "id": "712d39a1-ed9c-4c65-9d86-350276f936f7",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงราย",
+        "nameEn": null
+      },
+      {
+        "id": "ea7d538e-cea8-4cc9-892e-f859f609a1f4",
+        "type": "PROVINCE",
+        "name": "เชียงราย",
+        "nameEn": "Chiang Rai"
+      }
+    ],
+    "pointCount": 13,
+    "totalCount": 19,
+    "reasons": [
+      "source Sikh count positive"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=1d1210e4-74e3-470f-8521-0e92be297fce"
+  },
+  {
+    "id": "670769e5-88f0-4400-93dc-4cc7a993f045",
+    "name": "หนองตาด",
+    "parents": [
+      {
+        "id": "99c04ddd-bae4-40b2-8283-a156195d2b2a",
+        "type": "DISTRICT",
+        "name": "เมืองบุรีรัมย์",
+        "nameEn": null
+      },
+      {
+        "id": "0bbb00f3-e81f-4a1c-8543-e34587e19299",
+        "type": "PROVINCE",
+        "name": "บุรีรัมย์",
+        "nameEn": "Buri Ram"
+      }
+    ],
+    "pointCount": 12,
+    "totalCount": 13,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=670769e5-88f0-4400-93dc-4cc7a993f045"
+  },
+  {
+    "id": "be5940be-48b5-4f7a-a55f-5d32b2506736",
+    "name": "สนามชัย",
+    "parents": [
+      {
+        "id": "bc96cbbd-99c3-45ab-b472-fcb4957f82f9",
+        "type": "DISTRICT",
+        "name": "เมืองสุพรรณบุรี",
+        "nameEn": null
+      },
+      {
+        "id": "e1f3b227-b31d-4e31-8500-f7a38586f1bb",
+        "type": "PROVINCE",
+        "name": "สุพรรณบุรี",
+        "nameEn": "Suphan Buri"
+      }
+    ],
+    "pointCount": 20,
+    "totalCount": 21,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=be5940be-48b5-4f7a-a55f-5d32b2506736"
+  },
+  {
+    "id": "61d748bf-7d3c-489a-95cd-c22590dcf199",
+    "name": "สระขวัญ",
+    "parents": [
+      {
+        "id": "15b67f70-47b3-4234-8566-a850934c7024",
+        "type": "DISTRICT",
+        "name": "เมืองสระแก้ว",
+        "nameEn": null
+      },
+      {
+        "id": "0482a941-1334-46e6-9b1a-b0cf99325775",
+        "type": "PROVINCE",
+        "name": "สระแก้ว",
+        "nameEn": "Sa Kaeo"
+      }
+    ],
+    "pointCount": 14,
+    "totalCount": 16,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=61d748bf-7d3c-489a-95cd-c22590dcf199"
+  },
+  {
+    "id": "fa3c2f6c-0107-43dd-a963-0097620187a5",
+    "name": "ปางหมู",
+    "parents": [
+      {
+        "id": "85a1b5ab-c32a-4e15-966c-57eea0ec32ba",
+        "type": "DISTRICT",
+        "name": "เมืองแม่ฮ่องสอน",
+        "nameEn": null
+      },
+      {
+        "id": "1fecf5e9-cd32-4b73-beaa-bb3da6687dfa",
+        "type": "PROVINCE",
+        "name": "แม่ฮ่องสอน",
+        "nameEn": "Mae Hong Son"
+      }
+    ],
+    "pointCount": 14,
+    "totalCount": 16,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=fa3c2f6c-0107-43dd-a963-0097620187a5"
+  },
+  {
+    "id": "9a9b9c0d-35b3-44a6-823c-dbbfdb473ee1",
+    "name": "หนองเทพ",
+    "parents": [
+      {
+        "id": "c9dd1b04-80b6-4bd2-acb6-6ae61b18e8ed",
+        "type": "DISTRICT",
+        "name": "โนนนารายณ์",
+        "nameEn": null
+      },
+      {
+        "id": "3eefda09-ef27-43a9-86b1-c9ae6507b6f0",
+        "type": "PROVINCE",
+        "name": "สุรินทร์",
+        "nameEn": "Surin"
+      }
+    ],
+    "pointCount": 11,
+    "totalCount": 14,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=9a9b9c0d-35b3-44a6-823c-dbbfdb473ee1"
+  },
+  {
+    "id": "e903f449-09d7-47fb-bf95-7cbb1500dabe",
+    "name": "หัวนา",
+    "parents": [
+      {
+        "id": "81948a32-1484-46e1-8425-6173db82f9da",
+        "type": "DISTRICT",
+        "name": "เมืองหนองบัวลำภู",
+        "nameEn": null
+      },
+      {
+        "id": "87516089-3ba7-4587-8c45-e467c27c6e52",
+        "type": "PROVINCE",
+        "name": "หนองบัวลำภู",
+        "nameEn": "Nong Bua Lam Phu"
+      }
+    ],
+    "pointCount": 13,
+    "totalCount": 14,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=e903f449-09d7-47fb-bf95-7cbb1500dabe"
+  },
+  {
+    "id": "901690e2-e2bd-4e5d-910b-1c9c226405f0",
+    "name": "วัดชลอ",
+    "parents": [
+      {
+        "id": "53075472-4e60-4925-9f98-d17dd7af1b74",
+        "type": "DISTRICT",
+        "name": "บางกรวย",
+        "nameEn": null
+      },
+      {
+        "id": "f456f047-61ab-4f54-bdc4-99606817109c",
+        "type": "PROVINCE",
+        "name": "นนทบุรี",
+        "nameEn": "Nonthaburi"
+      }
+    ],
+    "pointCount": 9,
+    "totalCount": 12,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=901690e2-e2bd-4e5d-910b-1c9c226405f0"
+  },
+  {
+    "id": "52a9505d-c0d5-4f60-bf56-b437ed640eef",
+    "name": "พันท้ายนรสิงห์",
+    "parents": [
+      {
+        "id": "658e6c5d-8af9-4331-979c-8d7a58640934",
+        "type": "DISTRICT",
+        "name": "เมืองสมุทรสาคร",
+        "nameEn": null
+      },
+      {
+        "id": "31e56e07-b7a7-434c-ad7e-5ac193145368",
+        "type": "PROVINCE",
+        "name": "สมุทรสาคร",
+        "nameEn": "Samut Sakhon"
+      }
+    ],
+    "pointCount": 6,
+    "totalCount": 6,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=52a9505d-c0d5-4f60-bf56-b437ed640eef"
+  },
+  {
+    "id": "7eb91ee2-1246-46fb-90c3-b050a62e54e8",
+    "name": "งิม",
+    "parents": [
+      {
+        "id": "eaa77602-169d-49d3-976d-8c150913fe26",
+        "type": "DISTRICT",
+        "name": "ปง",
+        "nameEn": null
+      },
+      {
+        "id": "16ec39ad-b60e-4643-9adb-9833807d25c9",
+        "type": "PROVINCE",
+        "name": "พะเยา",
+        "nameEn": "Phayao"
+      }
+    ],
+    "pointCount": 19,
+    "totalCount": 20,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=7eb91ee2-1246-46fb-90c3-b050a62e54e8"
+  },
+  {
+    "id": "579ac4bc-4a32-4223-aba9-35ef89823bb2",
+    "name": "ท่าชนะ",
+    "parents": [
+      {
+        "id": "e678635d-bace-43e0-b8a1-2c3016d306bb",
+        "type": "DISTRICT",
+        "name": "ท่าชนะ",
+        "nameEn": null
+      },
+      {
+        "id": "e29b727c-76ef-473b-9ce1-a1e5abd95e4c",
+        "type": "PROVINCE",
+        "name": "สุราษฎร์ธานี",
+        "nameEn": "Surat Thani"
+      }
+    ],
+    "pointCount": 9,
+    "totalCount": 13,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=579ac4bc-4a32-4223-aba9-35ef89823bb2"
+  },
+  {
+    "id": "4dffc959-307e-4d06-b5b4-c5881a6bf8b1",
+    "name": "บ่อผุด",
+    "parents": [
+      {
+        "id": "25198626-cf9a-47b6-b663-57de7c361fc1",
+        "type": "DISTRICT",
+        "name": "เกาะสมุย",
+        "nameEn": null
+      },
+      {
+        "id": "e29b727c-76ef-473b-9ce1-a1e5abd95e4c",
+        "type": "PROVINCE",
+        "name": "สุราษฎร์ธานี",
+        "nameEn": "Surat Thani"
+      }
+    ],
+    "pointCount": 9,
+    "totalCount": 13,
+    "reasons": [
+      "source Sikh count positive"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=4dffc959-307e-4d06-b5b4-c5881a6bf8b1"
+  },
+  {
+    "id": "0ed476f8-f779-4dd0-aa63-5a8d61a12919",
+    "name": "ในเมือง",
+    "parents": [
+      {
+        "id": "20f76263-01b6-425e-a5ea-d298caa7ed38",
+        "type": "DISTRICT",
+        "name": "เมืองขอนแก่น",
+        "nameEn": null
+      },
+      {
+        "id": "1299fa9a-ae2c-48a2-9a89-2b8988e3ea0e",
+        "type": "PROVINCE",
+        "name": "ขอนแก่น",
+        "nameEn": "Khon Kaen"
+      }
+    ],
+    "pointCount": 18,
+    "totalCount": 21,
+    "reasons": [
+      "highest mapped count in province",
+      "source Sikh count positive"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=0ed476f8-f779-4dd0-aa63-5a8d61a12919"
+  },
+  {
+    "id": "21ccd754-5635-4893-9cfa-7247b0171bab",
+    "name": "ระบำ",
+    "parents": [
+      {
+        "id": "1d31e1ac-569e-45f0-87dc-6355aa301106",
+        "type": "DISTRICT",
+        "name": "ลานสัก",
+        "nameEn": null
+      },
+      {
+        "id": "07fdec79-2398-48e6-a76e-057270a484b3",
+        "type": "PROVINCE",
+        "name": "อุทัยธานี",
+        "nameEn": "Uthai Thani"
+      }
+    ],
+    "pointCount": 13,
+    "totalCount": 14,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=21ccd754-5635-4893-9cfa-7247b0171bab"
+  },
+  {
+    "id": "1b7f9c7c-8c4f-49cb-84f3-b16f1782a2a6",
+    "name": "นางาม",
+    "parents": [
+      {
+        "id": "5ae0b1f1-aae6-4c61-bfce-9bd605360083",
+        "type": "DISTRICT",
+        "name": "เรณูนคร",
+        "nameEn": null
+      },
+      {
+        "id": "7519a30a-dd2b-4dfb-81a3-a81a25174fbb",
+        "type": "PROVINCE",
+        "name": "นครพนม",
+        "nameEn": "Nakhon Phanom"
+      }
+    ],
+    "pointCount": 15,
+    "totalCount": 15,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=1b7f9c7c-8c4f-49cb-84f3-b16f1782a2a6"
+  },
+  {
+    "id": "7a6d951c-0d3a-44c9-b9e1-2ff2f64e79af",
+    "name": "โป่งน้ำร้อน",
+    "parents": [
+      {
+        "id": "c05b2189-2f88-4b33-ab5f-70894cc51aa3",
+        "type": "DISTRICT",
+        "name": "โป่งน้ำร้อน",
+        "nameEn": null
+      },
+      {
+        "id": "0332f2ce-d76b-48de-8e61-3c7358965fbb",
+        "type": "PROVINCE",
+        "name": "จันทบุรี",
+        "nameEn": "Chanthaburi"
+      }
+    ],
+    "pointCount": 15,
+    "totalCount": 15,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=7a6d951c-0d3a-44c9-b9e1-2ff2f64e79af"
+  },
+  {
+    "id": "de9de3a2-33bb-4cb6-a164-6eedb7948ccb",
+    "name": "วังตะเคียน",
+    "parents": [
+      {
+        "id": "55dfc174-f974-48d8-9041-5ae87e110947",
+        "type": "DISTRICT",
+        "name": "เขาสมิง",
+        "nameEn": null
+      },
+      {
+        "id": "cc440fcd-c885-4e36-b781-bc57c6415b16",
+        "type": "PROVINCE",
+        "name": "ตราด",
+        "nameEn": "Trat"
+      }
+    ],
+    "pointCount": 9,
+    "totalCount": 9,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=de9de3a2-33bb-4cb6-a164-6eedb7948ccb"
+  },
+  {
+    "id": "5435bc1b-4d4b-405a-8660-6104fef83bc0",
+    "name": "ในเมือง",
+    "parents": [
+      {
+        "id": "59be6ff0-40f5-429d-9d01-1600812a6ddc",
+        "type": "DISTRICT",
+        "name": "เมืองนครราชสีมา",
+        "nameEn": null
+      },
+      {
+        "id": "4ce9f1d3-f2c8-4bf9-aeb8-d0d2af986185",
+        "type": "PROVINCE",
+        "name": "นครราชสีมา",
+        "nameEn": "Nakhon Ratchasima"
+      }
+    ],
+    "pointCount": 30,
+    "totalCount": 37,
+    "reasons": [
+      "highest mapped count in province",
+      "source Sikh count positive"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=5435bc1b-4d4b-405a-8660-6104fef83bc0"
+  },
+  {
+    "id": "70f9c44c-0cbd-4690-a939-0994e2a2e0ec",
+    "name": "กำแพง",
+    "parents": [
+      {
+        "id": "5e64b1c4-6642-4e6c-8d06-ef8e3191b7d7",
+        "type": "DISTRICT",
+        "name": "ละงู",
+        "nameEn": null
+      },
+      {
+        "id": "55d5edbe-592c-49d0-aca8-15d4c1b2a890",
+        "type": "PROVINCE",
+        "name": "สตูล",
+        "nameEn": "Satun"
+      }
+    ],
+    "pointCount": 10,
+    "totalCount": 16,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=70f9c44c-0cbd-4690-a939-0994e2a2e0ec"
+  },
+  {
+    "id": "c79c9a38-effb-4c4e-906f-605a98905536",
+    "name": "คุระ",
+    "parents": [
+      {
+        "id": "0e50f306-2b9a-4eb2-a4b7-ca40949d65d2",
+        "type": "DISTRICT",
+        "name": "คุระบุรี",
+        "nameEn": null
+      },
+      {
+        "id": "cfff75fe-bcd8-4cb5-abc3-b7ccfada7863",
+        "type": "PROVINCE",
+        "name": "พังงา",
+        "nameEn": "Phangnga"
+      }
+    ],
+    "pointCount": 7,
+    "totalCount": 12,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=c79c9a38-effb-4c4e-906f-605a98905536"
+  },
+  {
+    "id": "bfad5c51-ab6f-4a6b-9f19-d2c404c6a8bb",
+    "name": "ในเวียง",
+    "parents": [
+      {
+        "id": "6dfe894c-8b8e-4311-b708-6aa50c00ae23",
+        "type": "DISTRICT",
+        "name": "เมืองน่าน",
+        "nameEn": null
+      },
+      {
+        "id": "fdc11dc4-fdc5-44a3-9ec0-dfa455a032f6",
+        "type": "PROVINCE",
+        "name": "น่าน",
+        "nameEn": "Nan"
+      }
+    ],
+    "pointCount": 25,
+    "totalCount": 27,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=bfad5c51-ab6f-4a6b-9f19-d2c404c6a8bb"
+  },
+  {
+    "id": "ba957ced-087e-4970-b251-f07ec78954bf",
+    "name": "สำเภาล่ม",
+    "parents": [
+      {
+        "id": "6f9df504-3dd9-4a36-968b-cdcd1fc979a9",
+        "type": "DISTRICT",
+        "name": "พระนครศรีอยุธยา",
+        "nameEn": null
+      },
+      {
+        "id": "8ea664b9-9ec4-44b5-b309-4ef863a00c80",
+        "type": "PROVINCE",
+        "name": "พระนครศรีอยุธยา",
+        "nameEn": "Phra Nakhon Si Ayutthaya"
+      }
+    ],
+    "pointCount": 14,
+    "totalCount": 40,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=ba957ced-087e-4970-b251-f07ec78954bf"
+  },
+  {
+    "id": "29e664cc-3209-4815-ab03-a6abdbdb1298",
+    "name": "อินทร์บุรี",
+    "parents": [
+      {
+        "id": "8dcbd617-725d-42c0-a8b5-7ec916bf022f",
+        "type": "DISTRICT",
+        "name": "อินทร์บุรี",
+        "nameEn": null
+      },
+      {
+        "id": "1b4ab8db-f87c-4b3b-aaa7-9ba3bd61207f",
+        "type": "PROVINCE",
+        "name": "สิงห์บุรี",
+        "nameEn": "Sing Buri"
+      }
+    ],
+    "pointCount": 8,
+    "totalCount": 8,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=29e664cc-3209-4815-ab03-a6abdbdb1298"
+  },
+  {
+    "id": "79d8b14b-d923-4baa-8223-351ca63275fc",
+    "name": "เวียง",
+    "parents": [
+      {
+        "id": "b54a330e-bee9-45e2-b16a-42c463ee855c",
+        "type": "DISTRICT",
+        "name": "ฝาง",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 21,
+    "totalCount": 33,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=79d8b14b-d923-4baa-8223-351ca63275fc"
+  },
+  {
+    "id": "99adabc5-46b0-4508-be0a-e6c45dbe3c23",
+    "name": "ช้างม่อย",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 6,
+    "totalCount": 8,
+    "reasons": [
+      "source Sikh count positive",
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=99adabc5-46b0-4508-be0a-e6c45dbe3c23"
+  },
+  {
+    "id": "f1a92e9d-22d2-4a23-88e2-2b3e498a64a2",
+    "name": "วัดเกต",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 6,
+    "totalCount": 9,
+    "reasons": [
+      "source Sikh count positive",
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=f1a92e9d-22d2-4a23-88e2-2b3e498a64a2"
+  },
+  {
+    "id": "9815df5d-d344-4cc9-84ce-1a13bf52442f",
+    "name": "ช้างคลาน",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 9,
+    "totalCount": 13,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=9815df5d-d344-4cc9-84ce-1a13bf52442f"
+  },
+  {
+    "id": "01290a5e-9503-442a-aa0a-5cdbb8ae750c",
+    "name": "สุเทพ",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 10,
+    "totalCount": 13,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=01290a5e-9503-442a-aa0a-5cdbb8ae750c"
+  },
+  {
+    "id": "ffc51ea8-7e52-40f2-9459-fff451c73849",
+    "name": "หนองป่าครั่ง",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 2,
+    "totalCount": 2,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=ffc51ea8-7e52-40f2-9459-fff451c73849"
+  },
+  {
+    "id": "a5bfaae1-d447-4f4d-9209-6c6f8a9c40fd",
+    "name": "แม่เหียะ",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 5,
+    "totalCount": 7,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=a5bfaae1-d447-4f4d-9209-6c6f8a9c40fd"
+  },
+  {
+    "id": "0367c8fe-5716-42a0-a41c-b2055d4f32da",
+    "name": "หนองหอย",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 5,
+    "totalCount": 5,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=0367c8fe-5716-42a0-a41c-b2055d4f32da"
+  },
+  {
+    "id": "f6993ac2-e8db-4ec1-aee1-8706a8b0f88e",
+    "name": "สันผีเสื้อ",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 5,
+    "totalCount": 6,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=f6993ac2-e8db-4ec1-aee1-8706a8b0f88e"
+  },
+  {
+    "id": "dc134da4-aabf-4501-8ab9-b63859c50816",
+    "name": "ช้างเผือก",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 5,
+    "totalCount": 6,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=dc134da4-aabf-4501-8ab9-b63859c50816"
+  },
+  {
+    "id": "70305da5-85c3-44ea-a501-cfec4fb843e1",
+    "name": "ฟ้าฮ่าม",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 4,
+    "totalCount": 5,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=70305da5-85c3-44ea-a501-cfec4fb843e1"
+  },
+  {
+    "id": "9c5f951c-7586-4dcc-bcf4-add62b55ea94",
+    "name": "พระสิงห์",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 18,
+    "totalCount": 22,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=9c5f951c-7586-4dcc-bcf4-add62b55ea94"
+  },
+  {
+    "id": "2ee3f7ec-1617-4171-9bd2-ee7b6dd7504e",
+    "name": "หายยา",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 9,
+    "totalCount": 9,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=2ee3f7ec-1617-4171-9bd2-ee7b6dd7504e"
+  },
+  {
+    "id": "a5878a89-c885-4547-8e1f-0ef46ee3d329",
+    "name": "ศรีภูมิ",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 18,
+    "totalCount": 24,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=a5878a89-c885-4547-8e1f-0ef46ee3d329"
+  },
+  {
+    "id": "62dc8fb4-5496-4053-be6b-a793b02ffb60",
+    "name": "ป่าแดด",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 6,
+    "totalCount": 7,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=62dc8fb4-5496-4053-be6b-a793b02ffb60"
+  },
+  {
+    "id": "8b68edac-84a8-4066-9087-9f082582c018",
+    "name": "ป่าตัน",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 3,
+    "totalCount": 3,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=8b68edac-84a8-4066-9087-9f082582c018"
+  },
+  {
+    "id": "e4e8b227-f9a4-4734-afb0-3af13cfb3d17",
+    "name": "ท่าศาลา",
+    "parents": [
+      {
+        "id": "b9584c3d-f910-4a54-b428-02001db69f76",
+        "type": "DISTRICT",
+        "name": "เมืองเชียงใหม่",
+        "nameEn": null
+      },
+      {
+        "id": "47545867-d3f1-4e13-a5d9-70021b6f8e99",
+        "type": "PROVINCE",
+        "name": "เชียงใหม่",
+        "nameEn": "Chiang Mai"
+      }
+    ],
+    "pointCount": 4,
+    "totalCount": 4,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=e4e8b227-f9a4-4734-afb0-3af13cfb3d17"
+  },
+  {
+    "id": "2e3ecfb4-ae7a-4090-aec6-7c293620faf7",
+    "name": "บุ่ง",
+    "parents": [
+      {
+        "id": "04bd7ad5-c630-48dc-b6d7-1d92d5db981c",
+        "type": "DISTRICT",
+        "name": "เมืองอำนาจเจริญ",
+        "nameEn": null
+      },
+      {
+        "id": "84c3797e-85af-4b0d-9b62-dc94f335a264",
+        "type": "PROVINCE",
+        "name": "อำนาจเจริญ",
+        "nameEn": "Amnat Charoen"
+      }
+    ],
+    "pointCount": 15,
+    "totalCount": 17,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=2e3ecfb4-ae7a-4090-aec6-7c293620faf7"
+  },
+  {
+    "id": "ecdec589-4e59-42a6-92af-e1f0abd33972",
+    "name": "พุทธบาท",
+    "parents": [
+      {
+        "id": "405782e9-e565-4e27-b8b7-dcb57a72f5a0",
+        "type": "DISTRICT",
+        "name": "ชนแดน",
+        "nameEn": null
+      },
+      {
+        "id": "45adc495-a252-4c35-bb92-dcffb2ff08fd",
+        "type": "PROVINCE",
+        "name": "เพชรบูรณ์",
+        "nameEn": "Phetchabun"
+      }
+    ],
+    "pointCount": 17,
+    "totalCount": 22,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=ecdec589-4e59-42a6-92af-e1f0abd33972"
+  },
+  {
+    "id": "ab6a674c-df78-44bb-b844-d172fda5f0eb",
+    "name": "เนินหอม",
+    "parents": [
+      {
+        "id": "20de1dba-d19b-4daf-bf6d-afb977c4df05",
+        "type": "DISTRICT",
+        "name": "เมืองปราจีนบุรี",
+        "nameEn": null
+      },
+      {
+        "id": "4995f60b-1e8b-4b27-811c-58f7328c480f",
+        "type": "PROVINCE",
+        "name": "ปราจีนบุรี",
+        "nameEn": "Prachin Buri"
+      }
+    ],
+    "pointCount": 17,
+    "totalCount": 18,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=ab6a674c-df78-44bb-b844-d172fda5f0eb"
+  },
+  {
+    "id": "cde06e99-e20f-4c41-8259-70b0e74ffdaf",
+    "name": "ศาลเจ้าโรงทอง",
+    "parents": [
+      {
+        "id": "a3a75726-eaf7-42d8-94cf-f97a093161a8",
+        "type": "DISTRICT",
+        "name": "วิเศษชัยชาญ",
+        "nameEn": null
+      },
+      {
+        "id": "b9873eac-8a60-4bd8-8a7d-78d9b698a917",
+        "type": "PROVINCE",
+        "name": "อ่างทอง",
+        "nameEn": "Ang Thong"
+      }
+    ],
+    "pointCount": 10,
+    "totalCount": 11,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=cde06e99-e20f-4c41-8259-70b0e74ffdaf"
+  },
+  {
+    "id": "f443bcef-532f-4613-acea-72c5343242e0",
+    "name": "ธาตุเชิงชุม",
+    "parents": [
+      {
+        "id": "803f6521-1e45-4110-bdc8-709d3f713af3",
+        "type": "DISTRICT",
+        "name": "เมืองสกลนคร",
+        "nameEn": null
+      },
+      {
+        "id": "b2d392da-0b0e-4036-9369-db4a2a53ce13",
+        "type": "PROVINCE",
+        "name": "สกลนคร",
+        "nameEn": "Sakon Nakhon"
+      }
+    ],
+    "pointCount": 21,
+    "totalCount": 23,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=f443bcef-532f-4613-acea-72c5343242e0"
+  },
+  {
+    "id": "85e40d19-9f03-4cc4-9408-be7ff52b561d",
+    "name": "ในเวียง",
+    "parents": [
+      {
+        "id": "517a6d1e-831f-4ec6-b9ce-c8a9d4bbaf7b",
+        "type": "DISTRICT",
+        "name": "เมืองแพร่",
+        "nameEn": null
+      },
+      {
+        "id": "c7bc471d-47d8-4645-aef6-44645c986c90",
+        "type": "PROVINCE",
+        "name": "แพร่",
+        "nameEn": "Phrae"
+      }
+    ],
+    "pointCount": 16,
+    "totalCount": 18,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=85e40d19-9f03-4cc4-9408-be7ff52b561d"
+  },
+  {
+    "id": "b324354a-95a8-460c-a12f-d19cd182e22e",
+    "name": "สะเตงนอก",
+    "parents": [
+      {
+        "id": "404a6328-5c42-4451-839a-cd6064d094d0",
+        "type": "DISTRICT",
+        "name": "เมืองยะลา",
+        "nameEn": null
+      },
+      {
+        "id": "e0ad2ad5-5da5-46ef-8351-c7b90f0558ed",
+        "type": "PROVINCE",
+        "name": "ยะลา",
+        "nameEn": "Yala"
+      }
+    ],
+    "pointCount": 15,
+    "totalCount": 25,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=b324354a-95a8-460c-a12f-d19cd182e22e"
+  },
+  {
+    "id": "a0f75626-521e-43c6-9330-f834cbf72cc7",
+    "name": "มะเขือแจ้",
+    "parents": [
+      {
+        "id": "1782e658-e400-4a11-8710-a75d09ce7ca9",
+        "type": "DISTRICT",
+        "name": "เมืองลำพูน",
+        "nameEn": null
+      },
+      {
+        "id": "76598456-e007-4fa4-b486-37c1053af6d9",
+        "type": "PROVINCE",
+        "name": "ลำพูน",
+        "nameEn": "Lamphun"
+      }
+    ],
+    "pointCount": 29,
+    "totalCount": 32,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=a0f75626-521e-43c6-9330-f834cbf72cc7"
+  },
+  {
+    "id": "6ac5da51-fc53-4cbd-b5df-1ea13172ed8f",
+    "name": "สาริกา",
+    "parents": [
+      {
+        "id": "7ab4d6c2-c17d-4285-b8b1-0f4f4e48727e",
+        "type": "DISTRICT",
+        "name": "เมืองนครนายก",
+        "nameEn": null
+      },
+      {
+        "id": "8ba66431-92e2-4f9f-adf0-d58c406d30a4",
+        "type": "PROVINCE",
+        "name": "นครนายก",
+        "nameEn": "Nakhon Nayok"
+      }
+    ],
+    "pointCount": 14,
+    "totalCount": 16,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=6ac5da51-fc53-4cbd-b5df-1ea13172ed8f"
+  },
+  {
+    "id": "b16ba6da-be88-46a3-8fed-849977e3a749",
+    "name": "ในเมือง",
+    "parents": [
+      {
+        "id": "d5823c75-87ab-4f11-b41f-c6540f518e0a",
+        "type": "DISTRICT",
+        "name": "เมืองอุบลราชธานี",
+        "nameEn": null
+      },
+      {
+        "id": "6bb69e3c-70ae-4f26-8e65-d876766de0ca",
+        "type": "PROVINCE",
+        "name": "อุบลราชธานี",
+        "nameEn": "Ubon Ratchathani"
+      }
+    ],
+    "pointCount": 24,
+    "totalCount": 28,
+    "reasons": [
+      "highest mapped count in province",
+      "source Sikh count positive"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=b16ba6da-be88-46a3-8fed-849977e3a749"
+  },
+  {
+    "id": "a5e1847a-ed0c-4e2e-be21-b653fdc03f28",
+    "name": "เหมืองใหม่",
+    "parents": [
+      {
+        "id": "972538a9-7d85-43cd-abcd-009d265d58a1",
+        "type": "DISTRICT",
+        "name": "อัมพวา",
+        "nameEn": null
+      },
+      {
+        "id": "daedc981-1ec9-4b51-8bf4-888aea45530b",
+        "type": "PROVINCE",
+        "name": "สมุทรสงคราม",
+        "nameEn": "Samut Songkhram"
+      }
+    ],
+    "pointCount": 8,
+    "totalCount": 9,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=a5e1847a-ed0c-4e2e-be21-b653fdc03f28"
+  },
+  {
+    "id": "999e6a13-0e06-4767-8022-b3d754b3901e",
+    "name": "เกาะลันตาน้อย",
+    "parents": [
+      {
+        "id": "232918c1-a723-473b-b94f-205a7bf313be",
+        "type": "DISTRICT",
+        "name": "เกาะลันตา",
+        "nameEn": null
+      },
+      {
+        "id": "fd7a538c-451b-4415-ad93-44caa9e44c7d",
+        "type": "PROVINCE",
+        "name": "กระบี่",
+        "nameEn": "Krabi"
+      }
+    ],
+    "pointCount": 8,
+    "totalCount": 8,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=999e6a13-0e06-4767-8022-b3d754b3901e"
+  },
+  {
+    "id": "3cea9a5e-e0d4-43c2-aebe-226891289df7",
+    "name": "เซกา",
+    "parents": [
+      {
+        "id": "9ebc3752-ccbc-4468-9ccd-9b8d99f0e3ae",
+        "type": "DISTRICT",
+        "name": "เซกา",
+        "nameEn": null
+      },
+      {
+        "id": "d17b3dd9-ef12-4698-b27f-a4c33d4fee00",
+        "type": "PROVINCE",
+        "name": "บึงกาฬ",
+        "nameEn": "Bueng Kan"
+      }
+    ],
+    "pointCount": 17,
+    "totalCount": 22,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=3cea9a5e-e0d4-43c2-aebe-226891289df7"
+  },
+  {
+    "id": "a57d497c-2a68-415f-8ee1-d806873832b0",
+    "name": "กุดชุม",
+    "parents": [
+      {
+        "id": "1f46ae5e-857d-4e8b-9fe1-f265c347304c",
+        "type": "DISTRICT",
+        "name": "กุดชุม",
+        "nameEn": null
+      },
+      {
+        "id": "d0f5e997-bae2-49d8-a310-41d4ea353df1",
+        "type": "PROVINCE",
+        "name": "ยโสธร",
+        "nameEn": "Yasothon"
+      }
+    ],
+    "pointCount": 16,
+    "totalCount": 20,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=a57d497c-2a68-415f-8ee1-d806873832b0"
+  },
+  {
+    "id": "35078b75-8b51-46ff-87d6-9c18a13fe717",
+    "name": "แพรกศรีราชา",
+    "parents": [
+      {
+        "id": "6b2eaa6e-b787-40f2-8496-7fbbf3b4a469",
+        "type": "DISTRICT",
+        "name": "สรรคบุรี",
+        "nameEn": null
+      },
+      {
+        "id": "bbf00b46-5db7-4935-bc5d-477900abbb2d",
+        "type": "PROVINCE",
+        "name": "ชัยนาท",
+        "nameEn": "Chai Nat"
+      }
+    ],
+    "pointCount": 56,
+    "totalCount": 63,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=35078b75-8b51-46ff-87d6-9c18a13fe717"
+  },
+  {
+    "id": "4e964a2d-c1d4-4bc6-a4a7-a4a5995090ef",
+    "name": "บ่อยาง",
+    "parents": [
+      {
+        "id": "83d60800-e76f-40f3-b5cc-6eb9e28dfbe6",
+        "type": "DISTRICT",
+        "name": "เมืองสงขลา",
+        "nameEn": null
+      },
+      {
+        "id": "5c388e35-f85d-424c-9143-87d5c44fe9df",
+        "type": "PROVINCE",
+        "name": "สงขลา",
+        "nameEn": "Songkhla"
+      }
+    ],
+    "pointCount": 18,
+    "totalCount": 20,
+    "reasons": [
+      "highest mapped count in province",
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=4e964a2d-c1d4-4bc6-a4a7-a4a5995090ef"
+  },
+  {
+    "id": "0226b164-1869-42b0-901d-472a5b607eff",
+    "name": "หาดใหญ่",
+    "parents": [
+      {
+        "id": "79099795-aaf4-4efe-9c0d-86d53f6faa48",
+        "type": "DISTRICT",
+        "name": "หาดใหญ่",
+        "nameEn": null
+      },
+      {
+        "id": "5c388e35-f85d-424c-9143-87d5c44fe9df",
+        "type": "PROVINCE",
+        "name": "สงขลา",
+        "nameEn": "Songkhla"
+      }
+    ],
+    "pointCount": 11,
+    "totalCount": 21,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=0226b164-1869-42b0-901d-472a5b607eff"
+  },
+  {
+    "id": "a547f2b0-664e-45a2-a66f-4470a0792b7e",
+    "name": "คอหงส์",
+    "parents": [
+      {
+        "id": "79099795-aaf4-4efe-9c0d-86d53f6faa48",
+        "type": "DISTRICT",
+        "name": "หาดใหญ่",
+        "nameEn": null
+      },
+      {
+        "id": "5c388e35-f85d-424c-9143-87d5c44fe9df",
+        "type": "PROVINCE",
+        "name": "สงขลา",
+        "nameEn": "Songkhla"
+      }
+    ],
+    "pointCount": 3,
+    "totalCount": 11,
+    "reasons": [
+      "selected metropolitan demonstration area"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=a547f2b0-664e-45a2-a66f-4470a0792b7e"
+  },
+  {
+    "id": "8bd4ae70-8e3d-4fac-b719-e0d91726fdfa",
+    "name": "โกสัมพี",
+    "parents": [
+      {
+        "id": "2d7cc30e-de7b-4934-af19-c221940c923b",
+        "type": "DISTRICT",
+        "name": "โกสัมพีนคร",
+        "nameEn": null
+      },
+      {
+        "id": "4d44a739-9684-41eb-8cd2-5db095589ee6",
+        "type": "PROVINCE",
+        "name": "กำแพงเพชร",
+        "nameEn": "Kamphaeng Phet"
+      }
+    ],
+    "pointCount": 21,
+    "totalCount": 23,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=8bd4ae70-8e3d-4fac-b719-e0d91726fdfa"
+  },
+  {
+    "id": "72f3fa96-2863-49d7-8ba5-2650a1fb8e17",
+    "name": "หมากแข้ง",
+    "parents": [
+      {
+        "id": "d9bb5933-cc61-4c73-90ec-03f95222568f",
+        "type": "DISTRICT",
+        "name": "เมืองอุดรธานี",
+        "nameEn": null
+      },
+      {
+        "id": "615e556d-70bd-4d68-b6fd-860c07d9b6a5",
+        "type": "PROVINCE",
+        "name": "อุดรธานี",
+        "nameEn": "Udon Thani"
+      }
+    ],
+    "pointCount": 19,
+    "totalCount": 21,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=72f3fa96-2863-49d7-8ba5-2650a1fb8e17"
+  },
+  {
+    "id": "55705c23-2c24-4a37-bc49-6cd64268cd80",
+    "name": "สังเม็ก",
+    "parents": [
+      {
+        "id": "91e81b7b-9064-4cbe-9f5a-e5b4e753dc4b",
+        "type": "DISTRICT",
+        "name": "กันทรลักษ์",
+        "nameEn": null
+      },
+      {
+        "id": "80a8aaec-55c3-422a-9ef2-a529b2e673b5",
+        "type": "PROVINCE",
+        "name": "ศรีสะเกษ",
+        "nameEn": "Si Sa Ket"
+      }
+    ],
+    "pointCount": 16,
+    "totalCount": 17,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=55705c23-2c24-4a37-bc49-6cd64268cd80"
+  },
+  {
+    "id": "9068aeef-9177-4ad8-a622-c1ba6bbed51a",
+    "name": "บึงคำพร้อย",
+    "parents": [
+      {
+        "id": "37d6f9d8-a4df-4749-bf91-e47a0f39683b",
+        "type": "DISTRICT",
+        "name": "ลำลูกกา",
+        "nameEn": null
+      },
+      {
+        "id": "c2a69dbc-5939-4c61-bccb-5723e192ab9e",
+        "type": "PROVINCE",
+        "name": "ปทุมธานี",
+        "nameEn": "Pathum Thani"
+      }
+    ],
+    "pointCount": 9,
+    "totalCount": 9,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=9068aeef-9177-4ad8-a622-c1ba6bbed51a"
+  },
+  {
+    "id": "a92e34c6-24dc-44f3-a22e-a178afea93b5",
+    "name": "วะตะแบก",
+    "parents": [
+      {
+        "id": "8a421de1-0b59-40da-b5a9-34b28790b99f",
+        "type": "DISTRICT",
+        "name": "เทพสถิต",
+        "nameEn": null
+      },
+      {
+        "id": "49b703a9-30ad-4996-ba08-ddc5cf09331e",
+        "type": "PROVINCE",
+        "name": "ชัยภูมิ",
+        "nameEn": "Chaiyaphum"
+      }
+    ],
+    "pointCount": 21,
+    "totalCount": 22,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=a92e34c6-24dc-44f3-a22e-a178afea93b5"
+  },
+  {
+    "id": "fb497b81-74b1-4f6e-9807-5900e794363f",
+    "name": "เขาตูม",
+    "parents": [
+      {
+        "id": "a2da1570-cb12-4960-a079-7b9bf57bcf91",
+        "type": "DISTRICT",
+        "name": "ยะรัง",
+        "nameEn": null
+      },
+      {
+        "id": "32b40b49-a04e-45c3-81a6-ab44b8d7f1f5",
+        "type": "PROVINCE",
+        "name": "ปัตตานี",
+        "nameEn": "Pattani"
+      }
+    ],
+    "pointCount": 14,
+    "totalCount": 23,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=fb497b81-74b1-4f6e-9807-5900e794363f"
+  },
+  {
+    "id": "b01a4cbb-5072-4312-8c2e-d2b1b2e03649",
+    "name": "จุมพล",
+    "parents": [
+      {
+        "id": "d49e9ab1-acdc-4639-9b3c-422e91399c78",
+        "type": "DISTRICT",
+        "name": "โพนพิสัย",
+        "nameEn": null
+      },
+      {
+        "id": "7e987560-fefc-4f19-b719-393d7a52f626",
+        "type": "PROVINCE",
+        "name": "หนองคาย",
+        "nameEn": "Nong Khai"
+      }
+    ],
+    "pointCount": 25,
+    "totalCount": 34,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=b01a4cbb-5072-4312-8c2e-d2b1b2e03649"
+  },
+  {
+    "id": "802b6ac8-1d7a-4565-a66c-e8276c159843",
+    "name": "สะอาดสมบูรณ์",
+    "parents": [
+      {
+        "id": "5d273b67-ff13-428f-b1ec-dcc4c693e27c",
+        "type": "DISTRICT",
+        "name": "เมืองร้อยเอ็ด",
+        "nameEn": null
+      },
+      {
+        "id": "515fca3f-a101-47c9-bf16-1c726455a13a",
+        "type": "PROVINCE",
+        "name": "ร้อยเอ็ด",
+        "nameEn": "Roi Et"
+      }
+    ],
+    "pointCount": 15,
+    "totalCount": 19,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=802b6ac8-1d7a-4565-a66c-e8276c159843"
+  },
+  {
+    "id": "0a1d0532-1550-43c0-9e65-1b05ca494162",
+    "name": "คลองตะเกรา",
+    "parents": [
+      {
+        "id": "d0d122d9-9451-4c0c-9d2e-3fe9d940d525",
+        "type": "DISTRICT",
+        "name": "ท่าตะเกียบ",
+        "nameEn": null
+      },
+      {
+        "id": "0aa57629-b171-4abf-8547-9d0e795bd8c5",
+        "type": "PROVINCE",
+        "name": "ฉะเชิงเทรา",
+        "nameEn": "Chachoengsao"
+      }
+    ],
+    "pointCount": 24,
+    "totalCount": 27,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=0a1d0532-1550-43c0-9e65-1b05ca494162"
+  },
+  {
+    "id": "b9110384-f681-4008-8c7f-7119dce8251d",
+    "name": "สุรศักดิ์",
+    "parents": [
+      {
+        "id": "e53c1c36-68a6-4593-8a97-f487dde082a0",
+        "type": "DISTRICT",
+        "name": "ศรีราชา",
+        "nameEn": null
+      },
+      {
+        "id": "747bdbc3-03f1-4156-b38a-dc664b43ae31",
+        "type": "PROVINCE",
+        "name": "ชลบุรี",
+        "nameEn": "Chon Buri"
+      }
+    ],
+    "pointCount": 12,
+    "totalCount": 20,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=b9110384-f681-4008-8c7f-7119dce8251d"
+  },
+  {
+    "id": "fcd96fd0-ad0d-4da5-a325-5e94bbc50ff1",
+    "name": "ท้ายทุ่ง",
+    "parents": [
+      {
+        "id": "ad1a792d-6265-49d3-83f6-65f04537913e",
+        "type": "DISTRICT",
+        "name": "ทับคล้อ",
+        "nameEn": null
+      },
+      {
+        "id": "eb4cf0c3-c4ca-4ffc-b8d0-cd28c2fb4c25",
+        "type": "PROVINCE",
+        "name": "พิจิตร",
+        "nameEn": "Phichit"
+      }
+    ],
+    "pointCount": 15,
+    "totalCount": 17,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=fcd96fd0-ad0d-4da5-a325-5e94bbc50ff1"
+  },
+  {
+    "id": "4141c0ea-e5ea-4caa-802e-3b18b80d70a7",
+    "name": "วังแดง",
+    "parents": [
+      {
+        "id": "a5a34e9e-a008-4385-813e-ceb1700c3778",
+        "type": "DISTRICT",
+        "name": "ตรอน",
+        "nameEn": null
+      },
+      {
+        "id": "56c25394-198a-4440-b6d7-5401247f0379",
+        "type": "PROVINCE",
+        "name": "อุตรดิตถ์",
+        "nameEn": "Uttaradit"
+      }
+    ],
+    "pointCount": 10,
+    "totalCount": 10,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=4141c0ea-e5ea-4caa-802e-3b18b80d70a7"
+  },
+  {
+    "id": "f318d759-24bf-4a75-8b7c-985667015162",
+    "name": "ปากช่อง",
+    "parents": [
+      {
+        "id": "d38ff70f-4f4b-436b-af86-43db77fea51c",
+        "type": "DISTRICT",
+        "name": "จอมบึง",
+        "nameEn": null
+      },
+      {
+        "id": "91908d4e-efcb-4cc5-b01d-c98e97e71a4c",
+        "type": "PROVINCE",
+        "name": "ราชบุรี",
+        "nameEn": "Ratchaburi"
+      }
+    ],
+    "pointCount": 11,
+    "totalCount": 12,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=f318d759-24bf-4a75-8b7c-985667015162"
+  },
+  {
+    "id": "b484e19c-93f0-4994-9f7d-fe6d42496d84",
+    "name": "มุกดาหาร",
+    "parents": [
+      {
+        "id": "399c4d37-e336-4959-8167-2538063a5180",
+        "type": "DISTRICT",
+        "name": "เมืองมุกดาหาร",
+        "nameEn": null
+      },
+      {
+        "id": "db443797-dbc4-4e17-9519-4d98d6b4fe8b",
+        "type": "PROVINCE",
+        "name": "มุกดาหาร",
+        "nameEn": "Mukdahan"
+      }
+    ],
+    "pointCount": 19,
+    "totalCount": 24,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=b484e19c-93f0-4994-9f7d-fe6d42496d84"
+  },
+  {
+    "id": "b97ba645-c05f-4167-96bf-3fe7070bfa3e",
+    "name": "ตาคลี",
+    "parents": [
+      {
+        "id": "5ed635f2-58bc-4499-832f-c3c6a9e38c8b",
+        "type": "DISTRICT",
+        "name": "ตาคลี",
+        "nameEn": null
+      },
+      {
+        "id": "b3d31cad-6b6b-421e-9a38-e04a90605747",
+        "type": "PROVINCE",
+        "name": "นครสวรรค์",
+        "nameEn": "Nakhon Sawan"
+      }
+    ],
+    "pointCount": 28,
+    "totalCount": 30,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=b97ba645-c05f-4167-96bf-3fe7070bfa3e"
+  },
+  {
+    "id": "012d1c1c-e1d9-48fa-ba8c-8c96a5d3ede6",
+    "name": "โคกตูม",
+    "parents": [
+      {
+        "id": "5aba120c-6060-4086-b0d6-c5af2d0853ea",
+        "type": "DISTRICT",
+        "name": "เมืองลพบุรี",
+        "nameEn": null
+      },
+      {
+        "id": "d6560e2d-f5c9-4209-851c-ef1a6fd98206",
+        "type": "PROVINCE",
+        "name": "ลพบุรี",
+        "nameEn": "Lop Buri"
+      }
+    ],
+    "pointCount": 22,
+    "totalCount": 24,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=012d1c1c-e1d9-48fa-ba8c-8c96a5d3ede6"
+  },
+  {
+    "id": "990ed224-af03-4f51-936a-d535b955332f",
+    "name": "ทุ่งควายกิน",
+    "parents": [
+      {
+        "id": "0128b10b-c020-4fbe-b019-a76a1adb13e5",
+        "type": "DISTRICT",
+        "name": "แกลง",
+        "nameEn": null
+      },
+      {
+        "id": "fc140349-8846-46d7-89bf-1035a92ab0b1",
+        "type": "PROVINCE",
+        "name": "ระยอง",
+        "nameEn": "Rayong"
+      }
+    ],
+    "pointCount": 9,
+    "totalCount": 10,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=990ed224-af03-4f51-936a-d535b955332f"
+  },
+  {
+    "id": "aa922f6a-b222-4dd3-95e6-97d8c1c3ddfe",
+    "name": "แม่สอด",
+    "parents": [
+      {
+        "id": "bb0a4052-86db-4945-9a2a-4b644679432a",
+        "type": "DISTRICT",
+        "name": "แม่สอด",
+        "nameEn": null
+      },
+      {
+        "id": "cd320c1e-10b5-4ca8-9e50-801156fa486d",
+        "type": "PROVINCE",
+        "name": "ตาก",
+        "nameEn": "Tak"
+      }
+    ],
+    "pointCount": 14,
+    "totalCount": 21,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=aa922f6a-b222-4dd3-95e6-97d8c1c3ddfe"
+  },
+  {
+    "id": "91035d2f-a751-4fbd-960e-830f059dfde1",
+    "name": "ตลาด",
+    "parents": [
+      {
+        "id": "b67b1c25-d8af-485c-b948-7ddeda6eb232",
+        "type": "DISTRICT",
+        "name": "เมืองมหาสารคาม",
+        "nameEn": null
+      },
+      {
+        "id": "3db48f9c-7bac-4783-aa51-fe27fb9eb726",
+        "type": "PROVINCE",
+        "name": "มหาสารคาม",
+        "nameEn": "Maha Sarakham"
+      }
+    ],
+    "pointCount": 15,
+    "totalCount": 18,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=91035d2f-a751-4fbd-960e-830f059dfde1"
+  },
+  {
+    "id": "2b99a31a-f477-4469-90fe-4ddf3f1d9dd6",
+    "name": "คลองด่าน",
+    "parents": [
+      {
+        "id": "e74589a0-32e4-472f-9dd7-2c6f0a6fd0ee",
+        "type": "DISTRICT",
+        "name": "บางบ่อ",
+        "nameEn": null
+      },
+      {
+        "id": "b844468b-d98e-4850-9de4-e7a62b49aaba",
+        "type": "PROVINCE",
+        "name": "สมุทรปราการ",
+        "nameEn": "Samut Prakan"
+      }
+    ],
+    "pointCount": 8,
+    "totalCount": 10,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=2b99a31a-f477-4469-90fe-4ddf3f1d9dd6"
+  },
+  {
+    "id": "ea39e734-b91e-4c43-a179-515fb191adf9",
+    "name": "สำโรงเหนือ",
+    "parents": [
+      {
+        "id": "eab89153-3cdc-4808-ae3d-e8f1c6d40b04",
+        "type": "DISTRICT",
+        "name": "เมืองสมุทรปราการ",
+        "nameEn": null
+      },
+      {
+        "id": "b844468b-d98e-4850-9de4-e7a62b49aaba",
+        "type": "PROVINCE",
+        "name": "สมุทรปราการ",
+        "nameEn": "Samut Prakan"
+      }
+    ],
+    "pointCount": 1,
+    "totalCount": 3,
+    "reasons": [
+      "source Sikh count positive"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=ea39e734-b91e-4c43-a179-515fb191adf9"
+  },
+  {
+    "id": "ca6a5a01-e48a-4a31-a18c-012926e262a1",
+    "name": "อ่าวน้อย",
+    "parents": [
+      {
+        "id": "fec08d85-0dfb-4606-9f30-85fec6e204f3",
+        "type": "DISTRICT",
+        "name": "เมืองประจวบคีรีขันธ์",
+        "nameEn": null
+      },
+      {
+        "id": "4e3e7ed3-2d6d-4a2e-954c-0c3df600c170",
+        "type": "PROVINCE",
+        "name": "ประจวบคีรีขันธ์",
+        "nameEn": "Prachuap Khiri Khan"
+      }
+    ],
+    "pointCount": 13,
+    "totalCount": 16,
+    "reasons": [
+      "highest mapped count in province"
+    ],
+    "url": "https://landometer.com/api/v2/citymeter-v3/place-of-worship/overlay-mvt/0/0/0?inTileType=SUBDISTRICT&inTileId=ca6a5a01-e48a-4a31-a18c-012926e262a1"
+  }
+]
