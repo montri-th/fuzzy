@@ -1,0 +1,54 @@
+{
+  "verifiedAt": "2026-10-21T01:57:04.269Z",
+  "siteId": "9777050c-b547-44c2-a4f7-61f1f9fd9917",
+  "deployId": "6ad81a26fc18a88d87c0b51f",
+  "sourceSha": "038986a04d2a63a9e57dddae93b29e836a238acf",
+  "state": "ready",
+  "publishedAt": "2026-10-21T01:50:11.937Z",
+  "publicURL": "https://landometer-fuzzy.netlify.app",
+  "databaseBranch": "production",
+  "migrations": {
+    "files": [
+      {
+        "name": "20261021010000_search_feedback",
+        "applied": true
+      }
+    ]
+  },
+  "rateLimit": {
+    "providerPostProcessingVerified": true,
+    "ruleCount": 1,
+    "path": "/api/search-service",
+    "keys": [
+      "domain",
+      "ip"
+    ],
+    "windowSeconds": 60,
+    "limit": 120,
+    "rejectionStatus": 429,
+    "evidence": "Netlify deploy post-processing log lines 217–218"
+  },
+  "publicHealth": {
+    "status": 200,
+    "storageStatus": "not_probed"
+  },
+  "adminPreflight": {
+    "status": 503,
+    "error": "admin_not_configured",
+    "blockedBeforeDatabaseRead": true
+  },
+  "hostTransformations": [
+    "HTML links rewritten to Netlify pretty URLs",
+    "Netlify public toolbar injected"
+  ],
+  "staticByteChecks": {
+    "assetPasses": 44,
+    "htmlTransformExceptions": 3,
+    "manifestMimeFixPending": true
+  },
+  "notClaimed": [
+    "usable database before authenticated read/write",
+    "production persistence before second deploy",
+    "load test"
+  ]
+}
