@@ -1,0 +1,156 @@
+{
+  "checkedAt": "2026-10-21T02:20:08.474718+00:00",
+  "baseURL": "https://landometer-fuzzy.netlify.app",
+  "deployedFunctionalSourceSha": "444899dedd7fee3f49d92f2a74f93b9bd53ddc81",
+  "createDeployId": "6ad81f1a8da7427955117741",
+  "persistenceDeployId": "6ad8200835d0d1a4cb0aa9d8",
+  "syntheticQA": true,
+  "realUserAccuracyClaim": false,
+  "qaReportsRetained": 2,
+  "containsRawQueries": false,
+  "containsTokens": false,
+  "publicUiFeedback": {
+    "saveConfirmed": true,
+    "authenticatedReadback": true,
+    "resultCountAndTopIdentitiesMatched": 8
+  },
+  "browserAdmin": {
+    "loginPassed": true,
+    "tokenInputCleared": true,
+    "qaReportsVisible": 2,
+    "statsReadPassed": true
+  },
+  "create": {
+    "passed": true,
+    "completedAt": "2026-10-21T02:11:49.240Z",
+    "checks": [
+      {
+        "name": "public_health_is_truthful_without_storage_probe",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "unlimited_default_function_alias_is_denied",
+        "status": 404,
+        "pass": true
+      },
+      {
+        "name": "unauthorized_admin_stats_rejected",
+        "status": 401,
+        "pass": true
+      },
+      {
+        "name": "unauthorized_report_read_rejected",
+        "status": 401,
+        "pass": true
+      },
+      {
+        "name": "authenticated_stats_and_database_are_available",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "synthetic_qa_event_saved_or_deduplicated",
+        "status": 201,
+        "pass": true
+      },
+      {
+        "name": "explicitly_labelled_synthetic_qa_report_saved",
+        "status": 201,
+        "pass": true
+      },
+      {
+        "name": "admin_can_read_exact_qa_report",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "synthetic_case_human_expectation_saved",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "admin_can_read_exact_qa_report",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "qa_case_has_confirmed_privacy_reviewed_state",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "confirmed_case_exports_exact_qa_expectation",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "daily_search_aggregate_contains_saved_qa_event",
+        "status": 200,
+        "pass": true
+      }
+    ]
+  },
+  "persistence": {
+    "passed": true,
+    "completedAt": "2026-10-21T02:16:11.577Z",
+    "requests": "GET only",
+    "sameExactQAReportAndReviewPreserved": true,
+    "confirmedCaseExportPreserved": true,
+    "statisticsEvidence": "aggregate only; API has no individual-event read endpoint",
+    "checks": [
+      {
+        "name": "public_health_is_truthful_without_storage_probe",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "unlimited_default_function_alias_is_denied",
+        "status": 404,
+        "pass": true
+      },
+      {
+        "name": "unauthorized_admin_stats_rejected",
+        "status": 401,
+        "pass": true
+      },
+      {
+        "name": "unauthorized_report_read_rejected",
+        "status": 401,
+        "pass": true
+      },
+      {
+        "name": "authenticated_stats_and_database_are_available",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "admin_can_read_exact_qa_report",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "qa_report_and_review_version_persist_after_redeploy",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "confirmed_case_exports_exact_qa_expectation",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "prior_day_aggregate_still_exists_after_redeploy",
+        "status": 200,
+        "pass": true
+      }
+    ]
+  },
+  "automaticTraining": false,
+  "deletionPerformed": false,
+  "limitations": [
+    "Known synthetic QA expectations; not a user-intent or real-human investigation label",
+    "No load or abuse simulation",
+    "No retention or automatic deletion policy activated"
+  ]
+}

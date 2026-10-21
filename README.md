@@ -4,6 +4,8 @@
 
 โค้ดนี้เป็นเว็บแยก ไม่ได้เปลี่ยน production ของ `landometer.com`.
 
+เปิด [เว็บทดลอง](https://landometer-fuzzy.netlify.app/) · [ผล review](https://landometer-fuzzy.netlify.app/review) · [โค้ดบน GitHub](https://github.com/montri-th/fuzzy)
+
 ## ข้อมูลและขอบเขต
 
 - ชื่อพื้นที่จริงจาก CityMETER 17,062 รายการ
@@ -29,14 +31,26 @@ npx netlify dev
 
 ตั้งค่า Netlify ผ่าน `netlify.toml`: publish `site/`, Functions `netlify/functions/`, migrations `netlify/database/migrations/`. ใช้ `@netlify/database` และ migration ที่ commit แล้ว ห้ามแก้ migration หลัง apply และห้ามเปลี่ยน hosted schema โดยตรง
 
-โปรเจกต์ที่เจ้าของอนุญาต: `landometer-fuzzy` ในทีม Montri. ต้องเชื่อม GitHub repository นี้ผ่านบัญชีที่มีสิทธิ์ในโปรเจกต์ก่อน deployment. เก็บ `.netlify/` นอก Git.
+โปรเจกต์ที่เจ้าของอนุญาตและเผยแพร่แล้ว: `landometer-fuzzy` ในทีม Montri เชื่อมกับ `montri-th/fuzzy`. URL คือ `https://landometer-fuzzy.netlify.app/`. เก็บ `.netlify/` นอก Git.
 
-ตั้ง server-side environment variables ก่อนเผยแพร่:
+การตั้ง environment variables สำหรับการติดตั้งนี้:
 
-- `FUZZY_ADMIN_TOKEN`: รหัสสุ่มอย่างน้อย 32 ตัว เก็บเป็น secret เฉพาะ Functions ห้ามใส่ใน Git หรือ client bundle
-- `FUZZY_ALLOWED_ORIGINS`: exact HTTPS origin ของเว็บที่อนุญาต เช่น `https://landometer-fuzzy.netlify.app`
+- `FUZZY_ADMIN_TOKEN`: รหัสสุ่มอย่างน้อย 32 ตัว บันทึกเป็น secret แล้วโดยเลือก deploy context **Production เท่านั้น**. บัญชี Free ที่ใช้จริงกำหนดให้ secret ใช้ scopes **Builds + Functions + Runtime** ร่วมกัน; เจ้าของอนุมัติสาม scopes นี้แล้วโดยไม่อัปเกรดแผน. ไม่เปิด Post processing; UI ยืนยัน context อื่นทั้งหมดเป็น Empty. โค้ดอ่านรหัสฝั่ง Functions เท่านั้น; ห้ามใส่ค่าใน Git, client bundle, URL หรือ browser storage
+- `FUZZY_ALLOWED_ORIGINS`: **optional และยังไม่ได้ตั้งค่าในการติดตั้งนี้** เพราะ handler ยอมรับ origin ของ request URL เดียวกันอยู่แล้ว. ตั้ง exact HTTPS origin เพิ่มเฉพาะเมื่อมีเหตุให้อนุญาตเว็บ origin อื่นอย่างชัดเจน ไม่ใช้ wildcard
 
-Backend ใช้เฉพาะ `/api/search-service`; default function alias ตอบ 404. ต้องตรวจ managed DB provisioning/migration, บันทึก–อ่านกลับ, persistence หลัง redeploy และ Netlify rate-limit postprocessing บน deployment จริงก่อนอ้างว่า backend พร้อมใช้งาน
+การให้สาม scopes ตามข้อจำกัดของบัญชีนี้ไม่ได้อนุญาตให้ build เผยแพร่ค่ารหัส. หลังเปลี่ยน secret ต้อง redeploy แล้วตรวจการยืนยันสิทธิ์ใหม่ โดยไม่พิมพ์ค่ารหัสลง log หรือหลักฐานสาธารณะ
+
+Backend ใช้เฉพาะ `/api/search-service`; default function alias ตอบ 404. Deployment สุดท้าย `6ad8200835d0d1a4cb0aa9d8` อยู่สถานะ ready เผยแพร่ `2026-10-21T02:14:57.212Z` โดยใช้ deployed functional source `444899dedd7fee3f49d92f2a74f93b9bd53ddc81` และ database branch `production`. Migration `20261021010000_search_feedback` ถูก apply ใน deployment แรก `6ad81a26fc18a88d87c0b51f`; รอบสุดท้ายไม่มี migration ใหม่. Provider ยืนยันกฎ rate limit 120 requests ต่อ 60 วินาที โดยใช้ domain + IP ในขั้น post-processing แล้ว; ไม่ใช่ผลทดสอบต้าน abuse หรือ load test
+
+ตรวจ static delivery ผ่าน 48 รายการ: 45 assets ตรง MIME/bytes/SHA-256 และ 3 หน้า HTML ผ่าน MIME/ข้อความที่กำหนด เนื่องจาก Netlify แปลงลิงก์เป็น pretty URL และเพิ่ม toolbar. อ่าน deployment identity และเวลาตรวจล่าสุดใน [ผล static verification](evidence/live-static-verification.json), [หลักฐาน deployment สุดท้าย](evidence/final-production-deploy.json) และ [ผล hosted backend](evidence/production-backend-verification.json). [หลักฐาน deployment แรก](evidence/first-production-deploy.json) เป็นประวัติของรอบแรก รวมสถานะที่ยังไม่ได้ตั้ง admin secret ในขณะนั้น
+
+Hosted QA หลังตั้ง secret ผ่าน 13/13 checks บน deployment `6ad81f1a8da7427955117741`: ปฏิเสธการอ่านที่ไม่ยืนยันสิทธิ์ (401), ปิด default alias (404), อ่านสถิติฐานข้อมูลด้วยสิทธิ์แอดมิน (200), บันทึก QA statistics/feedback (201), อ่านกลับ ตรวจเส้นทางยืนยันกรณี QA และ export case (200). คำร้อง QA ที่ส่งผ่านหน้าเว็บก่อนหน้านี้อ่านกลับด้วยสิทธิ์แอดมินได้ตรงทั้ง 8 IDs และจำนวนผล
+
+หลัง redeploy เป็น `6ad8200835d0d1a4cb0aa9d8` ตรวจแบบ GET-only ผ่าน 9/9: คำร้อง UUID เดิมยังอยู่พร้อม version สถานะ confirmed และประวัติเดิม, case export ตรงเดิม และยอดสถิติ aggregate คงอยู่. การตรวจ anonymous search events เป็นระดับ aggregate เท่านั้น. ทดสอบเข้าหลังบ้านผ่าน browser จริง อ่านคำร้อง QA สองรายการและสถิติสองครั้งได้ และช่องรหัสถูกล้างหลังเข้าสำเร็จ
+
+คำร้อง QA สังเคราะห์สองรายการยังคงอยู่โดยติดป้ายชัดเจน จึงอาจเห็นในหน้าหลังบ้าน. ผลนี้ตรวจวงจรระบบและ persistence ข้าม deployment ไม่ใช่คำร้องผู้ใช้จริง, human-labelled search accuracy, การสืบสวนโดยคนจริง หรือ load test. Health response `storageStatus: not_probed` เพียงอย่างเดียวไม่ใช่ผลตรวจฐานข้อมูล
+
+เอกสารปิดงาน commit แยกด้วย `[skip netlify]` เพื่อคง runtime ที่ตรวจไว้จาก functional source ข้างต้น; source นี้จึงไม่จำเป็นต้องเท่ากับ Git HEAD หลังเพิ่มเอกสารและหลักฐาน. ไม่มีการเปลี่ยนโค้ดหรือชุดทดสอบใน commit เอกสารนี้
 
 ## สถิติและคำร้อง
 

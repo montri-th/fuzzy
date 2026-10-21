@@ -1,0 +1,87 @@
+{
+  "releaseReadiness": "ready",
+  "scope": "Standalone CityMETER search demo; the live CityMETER product is unchanged",
+  "publicURL": "https://landometer-fuzzy.netlify.app",
+  "reviewedHeadSha": "444899dedd7fee3f49d92f2a74f93b9bd53ddc81",
+  "mergeCommitSha": null,
+  "publicationMethod": "direct main branch Git deployment",
+  "deployedSourceSha": "444899dedd7fee3f49d92f2a74f93b9bd53ddc81",
+  "providerDeployId": "6ad8200835d0d1a4cb0aa9d8",
+  "providerState": "ready",
+  "publishedAt": "2026-10-21T02:14:57.212Z",
+  "databaseBranch": "production",
+  "newMigrationsThisDeploy": {
+    "files": []
+  },
+  "initialMigration": {
+    "name": "20261021010000_search_feedback",
+    "appliedOnDeploy": "6ad81a26fc18a88d87c0b51f"
+  },
+  "productionSecret": {
+    "name": "FUZZY_ADMIN_TOKEN",
+    "storedAsSecret": true,
+    "scopes": [
+      "builds",
+      "functions",
+      "runtime"
+    ],
+    "contexts": [
+      "production"
+    ],
+    "postProcessing": false,
+    "otherContexts": "empty",
+    "ownerApproved": true,
+    "planUpgrade": false,
+    "valueIncluded": false
+  },
+  "optionalOriginAllowlist": "unset; same-origin requests accepted by handler",
+  "providerRateLimit": {
+    "postProcessingVerified": true,
+    "path": "/api/search-service",
+    "limit": 120,
+    "windowSeconds": 60,
+    "aggregate": [
+      "domain",
+      "ip"
+    ],
+    "rejectionStatus": 429,
+    "loadTestPerformed": false
+  },
+  "recentProviderStatusReview": {
+    "from": "2026-10-21T02:11:03.680Z",
+    "to": "2026-10-21T02:17:33.344Z",
+    "statusCounts": [
+      {
+        "key": "200",
+        "count": 139
+      },
+      {
+        "key": "401",
+        "count": 4
+      },
+      {
+        "key": "201",
+        "count": 2
+      },
+      {
+        "key": "301",
+        "count": 2
+      },
+      {
+        "key": "304",
+        "count": 2
+      },
+      {
+        "key": "404",
+        "count": 2
+      }
+    ],
+    "reported5xx": 0,
+    "scope": "Bounded post-secret-enable window, not an uptime or load guarantee"
+  },
+  "htmlTransformations": [
+    "Netlify pretty-URL link rewriting",
+    "Netlify public toolbar injection"
+  ],
+  "fullDesignSystemCertification": false
+}
